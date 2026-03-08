@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@layer base {
+  :root {
+    --color-brand-blue: #1D4E9E;
+    --color-brand-yellow: #FFD717;
+    --color-brand-red: #EF2327;
+    --color-brand-green: #3EB149;
+    --color-brand-gray: #E6E7E8;
+    --color-bg-sky: #D6F0FF;
+    --color-bg-dark: #0F172A;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-bg-sky);
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-sky);
+    color: #1a1a2e;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .btn-primary {
+    background-color: var(--color-brand-blue);
+    color: white;
+    padding: 0.65rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #163d7a;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(29, 78, 158, 0.3);
+  }
+
+  .btn-yellow {
+    background-color: var(--color-brand-yellow);
+    color: #1a1a2e;
+    padding: 0.65rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
+
+  .btn-yellow:hover {
+    background-color: #e6c000;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(255, 215, 23, 0.35);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: white;
+    padding: 0.65rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid rgba(255,255,255,0.75);
+    text-decoration: none;
+  }
+
+  .btn-outline:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-1px);
+  }
+
+  .section-sky {
+    background-color: var(--color-bg-sky);
+  }
+
+  .section-dark {
+    background-color: var(--color-bg-dark);
+    color: #e2e8f0;
+  }
+
+  .section-white {
+    background-color: #ffffff;
+  }
+
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  }
+
+  .text-brand-blue { color: var(--color-brand-blue); }
+  .text-brand-yellow { color: var(--color-brand-yellow); }
+  .text-brand-red { color: var(--color-brand-red); }
+  .text-brand-green { color: var(--color-brand-green); }
+  .bg-brand-blue { background-color: var(--color-brand-blue); }
+  .bg-brand-yellow { background-color: var(--color-brand-yellow); }
+  .bg-sky { background-color: var(--color-bg-sky); }
+}
+
+/* Swiper / carousel base */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Accordion */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.accordion-content.open {
+  max-height: 600px;
+}
+
+/* Scrollbar thin */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1D4E9E55; border-radius: 3px; }

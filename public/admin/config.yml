@@ -1,0 +1,246 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  # ─── HOME ──────────────────────────────────────────────────────────────────
+  - name: "home"
+    label: "Home"
+    files:
+      - name: "hero"
+        label: "Hero – Carrusel"
+        file: "content/home/hero.md"
+        fields:
+          - label: "Slides"
+            name: "slides"
+            widget: "list"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - { label: "Imagen", name: "image", widget: "image", required: false }
+              - { label: "Texto CTA", name: "ctaText", widget: "string" }
+              - { label: "Link CTA", name: "ctaLink", widget: "string" }
+
+      - name: "montessori"
+        label: "Banner Montessori"
+        file: "content/home/montessori.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Texto", name: "body", widget: "text" }
+          - { label: "Texto botón", name: "ctaText", widget: "string" }
+          - { label: "Link botón", name: "ctaLink", widget: "string" }
+          - { label: "Imagen de fondo", name: "backgroundImage", widget: "image", required: false }
+
+      - name: "vision-mission"
+        label: "Frase central (Ver el mundo)"
+        file: "content/home/vision-mission.md"
+        fields:
+          - { label: "Frase / Tagline", name: "tagline", widget: "string" }
+
+      - name: "identity"
+        label: "Identidad – Visión / Misión / Valores"
+        file: "content/home/identity.md"
+        fields:
+          - label: "Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Ícono (emoji)", name: "icon", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "body", widget: "text" }
+
+      - name: "propuesta-educativa"
+        label: "Propuesta Educativa"
+        file: "content/home/propuesta-educativa.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+
+      - name: "levels"
+        label: "Sección Niveles"
+        file: "content/home/levels.md"
+        fields:
+          - { label: "Título de sección", name: "title", widget: "string" }
+          - label: "Niveles"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "text" }
+              - { label: "Imagen", name: "image", widget: "image", required: false }
+              - { label: "Color (hex)", name: "color", widget: "string" }
+          - { label: "Título Logros", name: "achievementsTitle", widget: "string" }
+          - { label: "Texto Logros", name: "achievementsBody", widget: "text" }
+          - label: "Bullets de logros"
+            name: "achievementsBullets"
+            widget: "list"
+            field: { label: "Bullet", name: "item", widget: "string" }
+          - label: "Slides instalaciones"
+            name: "achievementsSlides"
+            widget: "list"
+            fields:
+              - { label: "Imagen", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+
+      - name: "tecnologias"
+        label: "Tecnologías educativas"
+        file: "content/home/tecnologias.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Texto", name: "body", widget: "text" }
+          - { label: "Imagen", name: "image", widget: "image", required: false }
+
+      - name: "community"
+        label: "Comunidad (redes sociales)"
+        file: "content/home/community.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - label: "Redes"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Plataforma", name: "platform", widget: "string" }
+              - { label: "Handle", name: "handle", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Preview (imagen)", name: "preview", widget: "image", required: false }
+
+      - name: "testimonials"
+        label: "Testimonios"
+        file: "content/home/testimonials.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - label: "Testimonios"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Rol / descripción", name: "role", widget: "string" }
+              - { label: "Cita", name: "quote", widget: "text" }
+              - { label: "Avatar", name: "avatar", widget: "image", required: false }
+
+      - name: "location"
+        label: "Ubicación"
+        file: "content/home/location.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Dirección", name: "address", widget: "string" }
+          - { label: "Google Maps Embed URL", name: "embedUrl", widget: "string" }
+
+      - name: "contact"
+        label: "Contacto"
+        file: "content/home/contact.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Texto", name: "body", widget: "text" }
+          - { label: "Número WhatsApp", name: "whatsappNumber", widget: "string" }
+          - { label: "Mensaje WhatsApp", name: "whatsappMessage", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+
+  # ─── NIVELES ───────────────────────────────────────────────────────────────
+  - name: "levels"
+    label: "Niveles educativos"
+    files:
+      - name: "maternal"
+        label: "Comunidad infantil (Maternal)"
+        file: "content/levels/maternal.md"
+        fields: &nivel_fields
+          - { label: "Slug", name: "slug", widget: "hidden" }
+          - { label: "Título (SEO)", name: "title", widget: "string" }
+          - { label: "Nombre visible", name: "displayName", widget: "string" }
+          - { label: "Subtítulo hero", name: "subtitle", widget: "string" }
+          - { label: "Imagen hero", name: "heroImage", widget: "image", required: false }
+          - { label: "Texto CTA hero", name: "ctaText", widget: "string" }
+          - { label: "Link CTA hero", name: "ctaLink", widget: "string" }
+          - { label: "Rango de edad", name: "ageRange", widget: "string" }
+          - { label: "Descripción edad", name: "ageDescription", widget: "text" }
+          - label: "Bloques (texto + imagen)"
+            name: "blocks"
+            widget: "list"
+            fields:
+              - { label: "Encabezado", name: "heading", widget: "string" }
+              - { label: "Texto", name: "body", widget: "text" }
+              - { label: "Imagen", name: "image", widget: "image", required: false }
+              - { label: "Alt imagen", name: "imageAlt", widget: "string", required: false }
+              - label: "Posición imagen"
+                name: "imagePosition"
+                widget: "select"
+                options: ["left", "right"]
+                default: "right"
+              - label: "Bullets"
+                name: "bullets"
+                widget: "list"
+                required: false
+                field: { label: "Bullet", name: "item", widget: "string" }
+          - label: "Talleres"
+            name: "talleres"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Ícono (emoji)", name: "icon", widget: "string", required: false }
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+          - label: "Horarios"
+            name: "horarios"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Día", name: "dia", widget: "string" }
+              - { label: "Horario", name: "horario", widget: "string" }
+          - label: "Galería"
+            name: "gallery"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Imagen", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Pregunta", name: "question", widget: "string" }
+              - { label: "Respuesta", name: "answer", widget: "text" }
+          # Solo para maternal
+          - label: "Valores (solo Maternal)"
+            name: "valores"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Ícono (emoji)", name: "icon", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+          - label: "En esta etapa trabajan (solo Maternal)"
+            name: "enEstaEtapa"
+            widget: "list"
+            required: false
+            field: { label: "Item", name: "item", widget: "string" }
+          - label: "Desarrollo académico (solo Maternal)"
+            name: "desarrolloAcademico"
+            widget: "text"
+            required: false
+
+      - name: "kinder"
+        label: "Casa de Niños (Kinder)"
+        file: "content/levels/kinder.md"
+        fields: *nivel_fields
+
+      - name: "primaria"
+        label: "Primaria"
+        file: "content/levels/primaria.md"
+        fields: *nivel_fields
+
+      - name: "secundaria"
+        label: "Secundaria"
+        file: "content/levels/secundaria.md"
+        fields: *nivel_fields
+
+      - name: "preparatoria"
+        label: "Preparatoria"
+        file: "content/levels/preparatoria.md"
+        fields: *nivel_fields

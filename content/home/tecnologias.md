@@ -1,0 +1,5 @@
+---
+title: "Tecnologías y plataformas educativas"
+body: "En Instituto Piaget, la tecnología se integra como herramienta complementaria al aprendizaje, respetando la autonomía y despertando la curiosidad del niño. La tecnología potencializa el aprendizaje, más nunca reemplaza, la experiencia directa y el práctico, creando un equilibrio entre el mundo digital y el aprendizaje real."
+image: "/uploads/tecnologias.jpg"
+---
