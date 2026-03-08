@@ -2,27 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─────────────────────────────────────────────────────────
+   BASE
+───────────────────────────────────────────────────────── */
 @layer base {
   :root {
-    --color-brand-blue: #1D4E9E;
+    --color-brand-blue:   #1D4E9E;
     --color-brand-yellow: #FFD717;
-    --color-brand-red: #EF2327;
-    --color-brand-green: #3EB149;
-    --color-brand-gray: #E6E7E8;
-    --color-bg-sky: #D6F0FF;
-    --color-bg-dark: #0F172A;
+    --color-brand-red:    #EF2327;
+    --color-brand-green:  #3EB149;
+    --color-brand-gray:   #E6E7E8;
+    --color-bg-sky:       #D6F0FF;
+    --color-bg-dark:      #0F172A;
     --font-display: 'Playfair Display', Georgia, serif;
-    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
   }
 
   html {
     scroll-behavior: smooth;
-    background-color: var(--color-bg-sky);
+    background-color: #D6F0FF;
   }
 
   body {
     font-family: var(--font-body);
-    background-color: var(--color-bg-sky);
+    background-color: #D6F0FF;
     color: #1a1a2e;
     -webkit-font-smoothing: antialiased;
   }
@@ -31,14 +34,17 @@
     font-family: var(--font-display);
   }
 
-  /* Thin scrollbar */
-  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar       { width: 6px; }
   ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: #1D4E9E55; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb { background: rgba(29,78,158,0.33); border-radius: 3px; }
 }
 
+/* ─────────────────────────────────────────────────────────
+   COMPONENTS — sin @apply, solo CSS puro
+───────────────────────────────────────────────────────── */
 @layer components {
-  /* ── Glass utilities ─────────────────────────────── */
+
+  /* Glass */
   .glass-card {
     background: rgba(255, 255, 255, 0.82);
     backdrop-filter: blur(12px);
@@ -55,11 +61,20 @@
     box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
   }
 
-  /* ── Buttons ─────────────────────────────────────── */
+  /* Buttons */
   .btn-primary {
-    @apply inline-block cursor-pointer rounded-full px-7 py-2.5 text-sm font-semibold text-white no-underline transition-all duration-200;
-    background-color: var(--color-brand-blue);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 9999px;
+    padding: 0.625rem 1.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
     letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    background-color: #1D4E9E;
+    border: none;
   }
   .btn-primary:hover {
     background-color: #163d7a;
@@ -68,9 +83,18 @@
   }
 
   .btn-yellow {
-    @apply inline-block cursor-pointer rounded-full px-7 py-2.5 text-sm font-bold text-slate-900 no-underline transition-all duration-200;
-    background-color: var(--color-brand-yellow);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 9999px;
+    padding: 0.625rem 1.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-decoration: none;
     letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    background-color: #FFD717;
+    border: none;
   }
   .btn-yellow:hover {
     background-color: #e6c000;
@@ -79,34 +103,30 @@
   }
 
   .btn-outline {
-    @apply inline-block cursor-pointer rounded-full px-7 py-2.5 text-sm font-semibold no-underline transition-all duration-200;
-    background: transparent;
-    color: var(--color-brand-blue);
-    border: 2px solid var(--color-brand-blue);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 9999px;
+    padding: 0.625rem 1.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1D4E9E;
+    text-decoration: none;
     letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    background: transparent;
+    border: 2px solid #1D4E9E;
   }
   .btn-outline:hover {
     background: rgba(29, 78, 158, 0.08);
     transform: translateY(-1px);
   }
 
-  /* ── Secciones — TODAS fondo celeste homologado ──── */
-  .section-sky {
-    background-color: var(--color-bg-sky);
-  }
+  /* Sections — todas fondo celeste homologado */
+  .section-sky   { background-color: #D6F0FF; }
+  .section-white { background-color: #D6F0FF; }
+  .section-dark  { background-color: #0F172A; color: #e2e8f0; }
 
-  /* section-white ahora también es celeste */
-  .section-white {
-    background-color: var(--color-bg-sky);
-  }
-
-  /* section-dark se conserva solo donde el contraste lo requiere */
-  .section-dark {
-    background-color: var(--color-bg-dark);
-    color: #e2e8f0;
-  }
-
-  /* ── Card hover ─────────────────────────────────── */
+  /* Card hover */
   .card-hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -116,6 +136,9 @@
   }
 }
 
+/* ─────────────────────────────────────────────────────────
+   UTILITIES
+───────────────────────────────────────────────────────── */
 @layer utilities {
   .text-brand-blue   { color: #1D4E9E; }
   .text-brand-yellow { color: #FFD717; }
