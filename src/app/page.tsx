@@ -5,6 +5,7 @@ import type {
   VisionMissionData,
   IdentityData,
   PropuestaData,
+  PhotoMosaicData,
   LevelsData,
   TecnologiasData,
   CommunityData,
@@ -19,6 +20,7 @@ import MontessoriBanner from "@/components/MontessoriBanner";
 import VisionMission from "@/components/VisionMission";
 import Identity from "@/components/Identity";
 import PropuestaEducativa from "@/components/PropuestaEducativa";
+import PhotoMosaic from "@/components/PhotoMosaic";
 import LevelsPath from "@/components/LevelsPath";
 import Tecnologias from "@/components/Tecnologias";
 import Community from "@/components/Community";
@@ -34,7 +36,8 @@ export default function HomePage() {
   const visionMission = readMd<VisionMissionData>("home/vision-mission.md");
   const identity = readMd<IdentityData>("home/identity.md");
   const propuesta = readMdWithBody<PropuestaData>("home/propuesta-educativa.md");
-  const levels = readMd<LevelsData>("home/levels.md");
+  const mosaic    = readMd<PhotoMosaicData>("home/photo-mosaic.md");
+  const levels    = readMd<LevelsData>("home/levels.md");
   const tecnologias = readMd<TecnologiasData>("home/tecnologias.md");
   const community = readMd<CommunityData>("home/community.md");
   const testimonials = readMd<TestimonialsData>("home/testimonials.md");
@@ -51,6 +54,7 @@ export default function HomePage() {
         <Identity data={identity} />
         <PropuestaEducativa data={{ title: propuesta.title, body: propuesta.body }} />
         <LevelsPath data={levels} />
+        <PhotoMosaic data={mosaic} />
         <Tecnologias data={tecnologias} />
         <Community data={community} />
         <Testimonials data={testimonials} />

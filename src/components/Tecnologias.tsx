@@ -6,11 +6,8 @@ interface TecnologiasProps {
 
 export default function Tecnologias({ data }: TecnologiasProps) {
   return (
-    <section className="section-sky py-20 lg:py-28">
+    <section className="section-sky py-20 lg:py-15">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-brand-blue text-sm font-semibold uppercase tracking-[0.2em] mb-4">
-          Innovación educativa
-        </p>
         <h2
           className="text-3xl sm:text-4xl font-bold mb-6 max-w-2xl mx-auto"
           style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}

@@ -1,0 +1,104 @@
+import Link from "next/link";
+
+interface Props {
+  heading: string;
+  body: string;
+  bullets?: string[];
+  image?: string;
+  imageAlt?: string;
+  ctaText?: string;
+  ctaLink?: string;
+  textFirst?: boolean;
+}
+
+export default function NivelDistingue({
+  heading,
+  body,
+  bullets = [],
+  image,
+  imageAlt = "",
+  ctaText,
+  ctaLink = "/#contacto",
+  textFirst = true,
+}: Props) {
+
+  const textBlock = (
+    <div className="w-full lg:w-1/2 flex flex-col justify-center px-0 lg:px-10 xl:px-16">
+
+      {/* Título — misma tipografía y color que el resto del sitio */}
+      <h2
+        className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-5"
+        style={{
+          fontFamily: "var(--font-display)",
+          color: "var(--color-brand-blue)",
+        }}
+      >
+        {heading}
+      </h2>
+
+      {/* Cuerpo — igual que MontessoriBanner, PropuestaEducativa */}
+      <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
+        {body}
+      </p>
+
+      {/* Bullets con check azul */}
+      {bullets.length > 0 && (
+        <ul className="mb-8 space-y-3">
+          {bullets.map((b, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span
+                className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5"
+                style={{ backgroundColor: "var(--color-brand-blue)" }}
+              >
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+              <span className="text-slate-700 text-sm sm:text-base leading-snug">{b}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {/* CTA — usa btn-primary del sistema global */}
+      {ctaText && (
+        <div>
+          <Link href={ctaLink} className="btn-primary">
+            {ctaText}
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+
+  const photoBlock = (
+    <div className="w-full lg:w-1/2">
+      <div className="rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: "4/3" }}>
+        {image ? (
+          <img src={image} alt={imageAlt || heading} className="w-full h-full object-cover" />
+        ) : (
+          <div
+            className="w-full h-full flex items-center justify-center"
+            style={{ minHeight: "320px", backgroundColor: "var(--color-brand-gray)" }}
+          >
+            <span className="text-5xl opacity-30">📷</span>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+
+  return (
+    <section className="section-sky py-16 lg:py-24">
+      <div className="mx-auto w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 2xl:px-16 max-w-8xl">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+          {textFirst ? (
+            <>{textBlock}{photoBlock}</>
+          ) : (
+            <>{photoBlock}{textBlock}</>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}

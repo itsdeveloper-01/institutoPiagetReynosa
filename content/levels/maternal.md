@@ -3,50 +3,57 @@ slug: "maternal"
 title: "Comunidad infantil – Maternal"
 displayName: "Comunidad infantil"
 subtitle: "Un espacio seguro y estimulante para los primeros años de vida"
-heroImage: "/uploads/maternal-hero.jpg"
+heroImage: "/uploads/4-patio-primaria-y-preescolar-1.jpg"
 ctaText: "Solicitar información"
 ctaLink: "/#contacto"
 ageRange: "45 días – 3 años"
 ageDescription: "En esta etapa el cerebro del niño crece más rápido que en ningún otro periodo de su vida. Nuestro ambiente preparado Montessori maximiza cada oportunidad de aprendizaje."
 
-valores:
-  - icon: "🤝"
-    title: "Respeto"
-    description: "Respetamos el ritmo individual de cada bebé y niño pequeño."
-  - icon: "💛"
-    title: "Amor"
-    description: "Un ambiente afectuoso es la base del desarrollo emocional sano."
+# Bloque 1: Texto izq | Foto der
+distingueHeading: "Lo que nos distingue en Maternal Piaget"
+distingueBody: "Cada espacio, cada material y cada rutina están diseñados para acompañar al bebé y al niño pequeño en su desarrollo natural. Nuestras guías certificadas crean vínculos seguros que son la base de todo aprendizaje futuro."
+distingueBullets:
+  - Ratio máximo 1 guía por cada 3 bebés
+  - Certificación Montessori AMI internacional
+  - Ambiente preparado a la medida del niño
+distingueImage: "/uploads/maternal-ambiente.jpg"
+distingueCtaText: "Agenda una visita"
+distingueCtaLink: "/#contacto"
+
+# Bloque 2: Foto izq | Texto der
+trabajanHeading: "Así crecen nuestros pequeños cada día"
+trabajanBody: "No existe el aprendizaje formal en esta etapa. Cada actividad, cada material y cada interacción estimulan el desarrollo sensorial, motor y emocional del niño a su propio ritmo y tiempo."
+trabajanBullets:
+  - Desarrollo sensorial y motor integrado
+  - Estimulación temprana del lenguaje oral
+  - Autonomía en el cuidado personal
+trabajanImage: "/uploads/maternal-gal-1.jpg"
+trabajanCtaText: "Conoce más"
+trabajanCtaLink: "/#contacto"
+
+# Bloque 3: Texto izq | Foto der
+desarrolloHeading: "Desarrollo integral desde el primer día"
+desarrolloBody: "Música, expresión corporal, contacto con la naturaleza y vida práctica cotidiana son parte del día a día. Observamos, acompañamos y creamos las condiciones óptimas para que cada niño florezca."
+desarrolloBullets:
+  - Música y movimiento desde los 45 días
+  - Vida práctica y autonomía progresiva
+  - Interacción social con pares supervisada
+desarrolloImage: "/uploads/maternal-gal-2.jpg"
+desarrolloCtaText: "Únete a la comunidad"
+desarrolloCtaLink: "/#contacto"
+
+orgulloItems:
+  - icon: "👶"
+    title: "Ambiente certificado Montessori AMI"
+    body: "Uno de los pocos maternal con certificación internacional en Tamaulipas."
+  - icon: "❤️"
+    title: "100% de familias satisfechas"
+    body: "Encuesta anual de satisfacción con calificación promedio de 9.7/10."
   - icon: "🌱"
-    title: "Autonomía"
-    description: "Fomentamos la independencia desde las actividades más pequeñas."
-
-enEstaEtapa:
-  - "Desarrollo sensorial y motor"
-  - "Estimulación temprana del lenguaje"
-  - "Autonomía en el cuidado personal"
-  - "Vida práctica cotidiana"
-  - "Música y expresión corporal"
-  - "Interacción social con pares"
-
-desarrolloAcademico: "En la Comunidad Infantil no existe el aprendizaje formal tradicional. En cambio, cada actividad, cada material Montessori y cada interacción están diseñados para estimular las áreas del desarrollo: motriz gruesa y fina, lenguaje oral, cognición, vida práctica y desarrollo socio-afectivo.\n\nNuestras guías Montessori certificadas observan, acompañan y crean las condiciones óptimas para que cada niño construya su propio aprendizaje a su propio tiempo."
-
-blocks:
-  - heading: "Ambiente preparado"
-    body: "Espacios diseñados a la medida del niño: muebles bajos, materiales accesibles, zonas diferenciadas por área de desarrollo."
-    image: "/uploads/maternal-ambiente.jpg"
-    imagePosition: "right"
-    bullets:
-      - "Zona de movimiento y gateo"
-      - "Área de vida práctica"
-      - "Espacio de lectura y lenguaje"
-  - heading: "Guías certificadas Montessori"
-    body: "Nuestro personal es especialista en primera infancia y cuenta con certificación Montessori internacional."
-    image: "/uploads/maternal-guias.jpg"
-    imagePosition: "left"
-    bullets:
-      - "Certificación AMI o AMS"
-      - "Ratio máximo 1:3"
-      - "Capacitación continua"
+    title: "30+ años formando la primera infancia"
+    body: "Generaciones de familias confían en Piaget desde el inicio de la vida."
+orgulloVideoUrl: ""
+orgulloVideoPoster: "/uploads/maternal-video-poster.jpg"
 
 talleres:
   - icon: "🎵"
@@ -80,4 +87,6 @@ faq:
     answer: "Proporcionamos una lista detallada en la entrevista. En general: muda de ropa, pañales (si aplica), lonchera y botella de agua."
   - question: "¿Tienen servicio de alimentación?"
     answer: "Sí, ofrecemos servicio de comedor con menú balanceado elaborado por nutrióloga. También puedes enviar lonchera de casa."
+
+blocks: []
 ---

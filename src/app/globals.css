@@ -14,7 +14,7 @@
     --color-brand-gray:   #E6E7E8;
     --color-bg-sky:       #D6F0FF;
     --color-bg-dark:      #0F172A;
-    --font-display: 'Playfair Display', Georgia, serif;
+    --font-display: 'Montserrat', system-ui, sans-serif;
     --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
   }
 
@@ -46,11 +46,11 @@
 
   /* Glass */
   .glass-card {
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(0, 0, 0, 0.07);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   }
 
   .glass-nav {

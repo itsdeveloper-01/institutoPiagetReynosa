@@ -3,29 +3,58 @@ slug: "primaria"
 title: "Primaria Montessori"
 displayName: "Primaria"
 subtitle: "Exploramos el universo con imaginación, razón y trabajo colaborativo"
-heroImage: "/uploads/primaria-hero.jpg"
+heroImage: "/uploads/9-primaria-segundo-piso.jpg"
 ctaText: "Solicitar información"
 ctaLink: "/#contacto"
 ageRange: "6 – 12 años"
-ageDescription: "El niño de primaria es un explorador del universo. Con las Grandes Lecciones Montessori, conecta todo el conocimiento humano en un tapiz coherente y emocionante."
+ageDescription: "El niño de primaria es un explorador del universo."
 
-blocks:
-  - heading: "Las Grandes Lecciones"
-    body: "El currículo de primaria se organiza alrededor de las cinco Grandes Lecciones: la historia del universo, la vida en la tierra, la historia de los seres humanos, la historia del lenguaje y la historia de los números."
-    image: "/uploads/primaria-lecciones.jpg"
-    imagePosition: "right"
-    bullets:
-      - "Historia cósmica integrada"
-      - "Biología, geografía y física conectadas"
-      - "Trabajo de investigación individual y grupal"
-  - heading: "Proyectos de impacto"
-    body: "Nuestros alumnos realizan proyectos trimestrales donde aplican matemáticas, lenguaje, ciencias y artes para resolver un problema real de su comunidad."
-    image: "/uploads/primaria-proyectos.jpg"
-    imagePosition: "left"
-    bullets:
-      - "Metodología de proyectos"
-      - "Presentaciones ante la comunidad"
-      - "Portafolio de evidencias"
+# Bloque 1: Texto izq | Foto der
+distingueHeading: "Lo que nos distingue en primaria Piaget"
+distingueBody: "Nuestro modelo Montessori de primaria va más allá del aula. Los alumnos investigan, experimentan y presentan sus proyectos ante la comunidad. Cada niño avanza a su ritmo con guías expertos que acompañan su proceso."
+distingueBullets:
+  - Currículo alineado con SEP y enriquecido
+  - Portafolio de evidencias individual
+  - Salones de 20 alumnos máximo
+distingueImage: "/uploads/primaria-lecciones.jpg"
+distingueCtaText: "Únete a la comunidad"
+distingueCtaLink: "/#contacto"
+
+# Bloque 2: Foto izq | Texto der
+trabajanHeading: "Así aprenden nuestros alumnos de primaria"
+trabajanBody: "En lugar de exámenes tradicionales, los alumnos desarrollan proyectos de investigación trimestrales donde aplican matemáticas, ciencias, lenguaje y arte para resolver problemas reales de su comunidad."
+trabajanBullets:
+  - Proyectos interdisciplinarios trimestrales
+  - Presentaciones ante padres de familia
+  - Evaluación por rúbricas descriptivas
+trabajanImage: "/uploads/primaria-proyectos.jpg"
+trabajanCtaText: "Conoce más"
+trabajanCtaLink: "/#contacto"
+
+# Bloque 3: Texto izq | Foto der
+desarrolloHeading: "Desarrollo académico con visión de futuro"
+desarrolloBody: "Cubrimos y superamos los aprendizajes esperados de la SEP. Nuestros egresados de primaria ingresan a secundaria con bases sólidas en pensamiento lógico, comprensión lectora y habilidades sociales."
+desarrolloBullets:
+  - Matemáticas con material Montessori certificado
+  - Español con enfoque en lectura crítica
+  - Inglés desde primer grado
+desarrolloImage: "/uploads/primaria-gal-1.jpg"
+desarrolloCtaText: "Ver plan de estudios"
+desarrolloCtaLink: "/#contacto"
+
+# Orgullo Piaget
+orgulloItems:
+  - icon: "🏆"
+    title: "3er lugar nacional – Olimpiada de Matemáticas"
+    body: "Dos alumnos de 6° representaron a Tamaulipas en la fase nacional 2024."
+  - icon: "🔬"
+    title: "Premio Explora SEP 2024"
+    body: "Proyecto de ciencias sobre purificación de agua reconocido a nivel estatal."
+  - icon: "🎖️"
+    title: "100% pase a secundaria"
+    body: "Todos nuestros egresados ingresan a secundaria con evaluación sobresaliente."
+orgulloVideoUrl: ""
+orgulloVideoPoster: "/uploads/primaria-video-poster.jpg"
 
 talleres:
   - icon: "💻"
@@ -57,7 +86,11 @@ gallery:
 
 faq:
   - question: "¿Cómo es la evaluación en primaria Montessori?"
-    answer: "Utilizamos evaluación por portafolio y rúbricas descriptivas. No hay exámenes tradicionales hasta 5° y 6° grado, donde introducimos evaluaciones formativas para preparar el paso a secundaria."
+    answer: "Utilizamos evaluación por portafolio y rúbricas descriptivas. No hay exámenes tradicionales hasta 5° y 6° grado."
   - question: "¿El plan de estudios cumple con la SEP?"
-    answer: "Sí, cubrimos e incluso superamos los aprendizajes esperados de la SEP, con evidencias documentadas en el portafolio de cada alumno."
+    answer: "Sí, cubrimos e incluso superamos los aprendizajes esperados de la SEP."
+  - question: "¿Cuántos alumnos hay por salón?"
+    answer: "Máximo 20 alumnos por grupo con un guía Montessori certificado."
+
+blocks: []
 ---

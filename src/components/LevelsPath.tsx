@@ -26,9 +26,6 @@ export default function LevelsPath({ data }: LevelsPathProps) {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-16">
-          <p className="text-brand-blue text-sm font-semibold uppercase tracking-[0.2em] mb-3">
-            Comunidad educativa
-          </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-slate-800"
             style={{ fontFamily: "var(--font-display)" }}
@@ -39,7 +36,7 @@ export default function LevelsPath({ data }: LevelsPathProps) {
 
         {/* Alternating levels */}
         <div className="flex flex-col gap-10">
-          {data.items.map((level, i) => {
+          {(data.items ?? []).map((level, i) => {
             const color = LEVEL_COLORS[level.slug] || "#1D4E9E";
             const isEven = i % 2 === 0;
             return (
@@ -108,30 +105,41 @@ export default function LevelsPath({ data }: LevelsPathProps) {
         <div className="mt-20 rounded-3xl overflow-hidden shadow-xl glass-card">
           <div className="flex flex-col lg:flex-row">
             {/* Text */}
-            <div
-              className="lg:w-1/2 p-10 lg:p-14"
-              style={{
-                background:
-                  "linear-gradient(135deg, #1D4E9E 0%, #163d7a 100%)",
-              }}
-            >
-              <p className="text-brand-yellow text-xs font-semibold uppercase tracking-[0.2em] mb-4">
-                Excelencia académica
-              </p>
+            <div className="lg:w-1/2 p-10 lg:p-14" style={{ backgroundColor: "#D6F0FF" }}>
+
+              {/* Título estilo referencia: primeras palabras en bold azul */}
               <h3
-                className="text-2xl sm:text-3xl font-bold text-white mb-5"
-                style={{ fontFamily: "var(--font-display)" }}
+                className="text-3xl sm:text-4xl font-bold leading-tight mb-5"
+                style={{ fontFamily: "var(--font-display)", color: "#1D4E9E" }}
               >
                 {data.achievementsTitle}
               </h3>
-              <p className="text-white/80 text-sm leading-relaxed mb-6">
+
+              {/* Párrafo descriptivo */}
+              <p className="text-slate-600 text-base leading-relaxed mb-8">
                 {data.achievementsBody}
               </p>
-              <ul className="space-y-2.5">
-                {(data.achievementsBullets || []).map((b, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/90 text-sm">
-                    <span className="mt-0.5 text-brand-yellow text-lg leading-none">✦</span>
-                    {b}
+
+              {/* Lista 2 columnas con check circular */}
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                {(data.achievementsBullets ?? []).map((b, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    {/* Check icon */}
+                    <span
+                      className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5"
+                      style={{ backgroundColor: "#1D4E9E" }}
+                    >
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path
+                          d="M2 6l3 3 5-5"
+                          stroke="white"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <span className="text-slate-700 text-sm leading-snug">{b}</span>
                   </li>
                 ))}
               </ul>

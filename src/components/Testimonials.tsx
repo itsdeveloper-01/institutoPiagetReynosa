@@ -9,9 +9,6 @@ export default function Testimonials({ data }: TestimonialsProps) {
     <section id="testimonials" className="section-sky py-20 lg:py-28">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="text-brand-blue text-sm font-semibold uppercase tracking-[0.2em] mb-3">
-            Lo que dicen las familias
-          </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-slate-800"
             style={{ fontFamily: "var(--font-display)" }}

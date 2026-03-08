@@ -3,7 +3,7 @@ title: Niveles educativos
 items:
   - slug: maternal
     name: Comunidad infantil
-    tagline: Paraxploración sensorial y rutinas con calidez.
+    tagline: Exploración sensorial y rutinas con calidez.
     image: /uploads/4-patio-primaria-y-preescolar-1.jpg
     color: "#EF2327"
   - slug: kinder
@@ -23,20 +23,18 @@ items:
     color: "#1D4E9E"
   - slug: preparatoria
     name: Preparatoria
-    tagline: DFormación para el futuro con enfoque integral.
+    tagline: Formación para el futuro con enfoque integral.
     image: /uploads/49-salon-preparatoria.jpg
     color: "#7C3AED"
-achievementsTitle: Logros de programa y certificaciones
-achievementsBody: Descubre nuestras instalaciones diseñadas para inspirar a tu
-  hijo a aprender y crecer. En Instituto Piaget, ofrece un entorno único que
-  combina autonomía, valores, naturaleza, seguridad y ambientes preparados para
-  el aprendizaje que fomenta el desarrollo integral en cada etapa educativa.
+achievementsTitle: "Instalaciones pensadas para aprender."
+achievementsBody: Descubre nuestras instalaciones diseñadas para inspirar a tu hijo a aprender y crecer. En Instituto Piaget ofrecemos un entorno único que combina autonomía, valores, naturaleza, seguridad y ambientes preparados para el aprendizaje que fomenta el desarrollo integral en cada etapa educativa.
 achievementsBullets:
-  - Certificación SEP nivel Excelente
-  - Olimpiadas de Matemáticas – 3er lugar nacional
-  - Premio Nacional de Innovación Educativa 2023
-  - Convenio con universidades de Estados Unidos y Canadá
-  - 100% de egresados de preparatoria con ingreso a universidad
+  - 3 laboratorios de cómputo
+  - Cabina de podcast
+  - 2 laboratorios de robótica
+  - 4 salas audiovisuales
+  - Laboratorio de ciencias
+  - Acceso con cámaras
 achievementsSlides:
   - image: /uploads/instalacion-1.jpg
     caption: Laboratorio de ciencias

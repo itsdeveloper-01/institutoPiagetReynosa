@@ -6,20 +6,10 @@ interface IdentityProps {
 
 export default function Identity({ data }: IdentityProps) {
   return (
-    <section id="identity" className="section-white py-20 lg:py-28">
+    <section id="identity" className="section-white py-20 lg:py-10">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="text-brand-blue text-sm font-semibold uppercase tracking-[0.2em] mb-3">
-            Quiénes somos
-          </p>
-          <h2
-            className="text-3xl sm:text-4xl font-bold text-slate-800"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Identidad institucional
-          </h2>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {data.cards.map((card, i) => (
             <div

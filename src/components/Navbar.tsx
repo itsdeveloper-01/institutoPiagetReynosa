@@ -1,5 +1,6 @@
 "use client";
 
+import Container from "@/components/Container";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -20,31 +21,25 @@ export default function Navbar() {
 
   const resolveHref = (href: string) => (href.startsWith("#") ? (onHome ? href : `/${href}`) : href);
 
-  // ESC para cerrar
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  // Bloquea scroll cuando el drawer está abierto
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
+    return () => { document.body.style.overflow = ""; };
   }, [open]);
 
   return (
     <header className="sticky top-0 z-50">
-      {/* navbar-area (equivalente a .navbar-area) */}
       <div className="w-full">
-        {/* contenedor centrado (equivalente al “container” de Webflow) */}
-        <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-3">
-          {/* header-container glass */}
+        {/* Contenedor fluido responsivo — reemplaza max-w-screen-xl fijo */}
+        <Container className="py-3">
           <div className="rounded-xl bg-white/75 backdrop-blur-md shadow-soft border border-black/5 px-4 py-3">
-            {/* nav-bar-wrapper (equivalente a .nav-bar-wrapper) */}
             <div className="flex items-center justify-between gap-4">
+
               {/* brand-logo */}
               <Link href={onHome ? "/#top" : "/"} className="flex items-center gap-3 min-w-0" onClick={() => setOpen(false)}>
                 <Image
@@ -79,8 +74,7 @@ export default function Navbar() {
                 <a
                   href={resolveHref("#contacto")}
                   onClick={() => setOpen(false)}
-                  className="inline-flex items-center justify-center rounded-lg bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white shadow-soft
-                             hover:bg-slate-900 transition"
+                  className="inline-flex items-center justify-center rounded-lg bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-slate-900 transition"
                 >
                   Contáctanos
                 </a>
@@ -100,9 +94,10 @@ export default function Navbar() {
                   </span>
                 </button>
               </div>
+
             </div>
           </div>
-        </div>
+        </Container>
 
         {/* Mobile overlay + drawer */}
         <div className={`lg:hidden fixed inset-0 z-50 ${open ? "pointer-events-auto" : "pointer-events-none"}`} aria-hidden={!open}>
@@ -110,7 +105,6 @@ export default function Navbar() {
             className={`absolute inset-0 bg-black/40 transition-opacity ${open ? "opacity-100" : "opacity-0"}`}
             onClick={() => setOpen(false)}
           />
-
           <aside
             id="mobile-menu"
             className={`absolute right-0 top-0 h-dvh w-[88%] max-w-sm bg-white shadow-2xl border-l border-black/10
@@ -118,7 +112,7 @@ export default function Navbar() {
           >
             <div className="border-b border-black/10 p-4 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <Image src="/logo.png" alt="Logo" width={120} height={40} className="h-8 w-auto object-contain" />
+                <Image src="/logo02.jpg" alt="Instituto Piaget" width={120} height={40} className="h-8 w-auto object-contain" />
                 <div className="text-sm font-semibold text-slate-900">Menú</div>
               </div>
               <button className="rounded-lg border border-black/10 px-3 py-2 text-sm font-semibold" onClick={() => setOpen(false)}>
@@ -153,6 +147,7 @@ export default function Navbar() {
             </div>
           </aside>
         </div>
+
       </div>
     </header>
   );

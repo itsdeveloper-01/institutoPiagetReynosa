@@ -24,10 +24,7 @@ export default function MontessoriBanner({ data }: MontessoriBannerProps) {
       <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-brand-blue/8 blur-3xl pointer-events-none" />
       <div className="absolute -left-16 -bottom-16 w-72 h-72 rounded-full bg-brand-blue/5 blur-2xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-center">
-        <p className="text-brand-blue text-sm font-semibold uppercase tracking-[0.2em] mb-4">
-          Nuestro enfoque
-        </p>
+      <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-10 text-center">
         <h2
           className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
           style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}

@@ -22,6 +22,7 @@ export interface MontessoriData {
 
 export interface VisionMissionData {
   tagline: string;
+  image?: string;
 }
 
 export interface IdentityCard {
@@ -38,6 +39,16 @@ export interface PropuestaData {
   title: string;
   body: string;
 }
+
+export interface PhotoMosaicItem {
+  src: string;
+  alt: string;
+}
+
+export interface PhotoMosaicData {
+  photos: PhotoMosaicItem[];
+}
+
 
 export interface LevelItem {
   slug: string;
@@ -143,6 +154,12 @@ export interface ValorItem {
   description: string;
 }
 
+export interface OrgulloItem {
+  icon: string;
+  title: string;
+  body: string;
+}
+
 export interface NivelData {
   slug: string;
   title: string;
@@ -153,6 +170,32 @@ export interface NivelData {
   ctaLink: string;
   ageRange: string;
   ageDescription: string;
+  // Bloque 1: Texto izq / Foto der
+  distingueHeading?: string;
+  distingueBody?: string;
+  distingueBullets?: string[];
+  distingueImage?: string;
+  distingueCtaText?: string;
+  distingueCtaLink?: string;
+  // Bloque 2: Foto izq / Texto der
+  trabajanHeading?: string;
+  trabajanBody?: string;
+  trabajanBullets?: string[];
+  trabajanImage?: string;
+  trabajanCtaText?: string;
+  trabajanCtaLink?: string;
+  // Bloque 3: Texto izq / Foto der
+  desarrolloHeading?: string;
+  desarrolloBody?: string;
+  desarrolloBullets?: string[];
+  desarrolloImage?: string;
+  desarrolloCtaText?: string;
+  desarrolloCtaLink?: string;
+  // Orgullo Piaget
+  orgulloItems?: OrgulloItem[];
+  orgulloVideoUrl?: string;
+  orgulloVideoPoster?: string;
+  // Resto
   blocks: NivelBlock[];
   talleres?: Taller[];
   horarios?: HorarioItem[];
