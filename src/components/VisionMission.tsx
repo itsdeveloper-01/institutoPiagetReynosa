@@ -80,6 +80,12 @@ export default function VisionMission({ data }: Props) {
 
       {/* Texto centrado sobre la imagen */}
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
+        <p
+          className="text-white/70 text-xs font-bold uppercase tracking-[0.25em] mb-4"
+          style={{ textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}
+        >
+          Nuestra filosofía
+        </p>
         <h2
           className="font-bold text-white leading-none"
           style={{
