@@ -1,3 +1,3 @@
 ---
-tagline: "Ver el mundo a través de sus ojos"
+tagline: View the world through their eyes
 ---
