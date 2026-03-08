@@ -9,6 +9,7 @@ interface HeroCarouselProps {
 }
 
 export default function HeroCarousel({ slides }: HeroCarouselProps) {
+  const safeSlides = slides ?? [];
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -23,21 +24,22 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
   );
 
   const next = useCallback(() => {
-    goTo((current + 1) % slides.length);
-  }, [current, slides.length, goTo]);
+    goTo((current + 1) % safeSlides.length);
+  }, [current, safeSlides.length, goTo]);
 
   useEffect(() => {
+    if (!safeSlides.length) return;
     const interval = setInterval(next, 5500);
     return () => clearInterval(interval);
-  }, [next]);
+  }, [next, safeSlides.length]);
 
-  if (!slides.length) return null;
-  const slide = slides[current];
+  if (!safeSlides.length) return null;
+  const slide = safeSlides[current];
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background slides */}
-      {slides.map((s, i) => (
+      {safeSlides.map((s, i) => (
         <div
           key={i}
           className="absolute inset-0 transition-opacity duration-700"
@@ -96,8 +98,8 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
       </div>
 
       {/* Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-        {slides.map((_, i) => (
+      <div className="absolute bottom-14 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+        {safeSlides.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
@@ -113,14 +115,14 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
 
       {/* Arrows */}
       <button
-        onClick={() => goTo((current - 1 + slides.length) % slides.length)}
+        onClick={() => goTo((current - 1 + safeSlides.length) % safeSlides.length)}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm flex items-center justify-center text-white transition-all"
         aria-label="Anterior"
       >
         ‹
       </button>
       <button
-        onClick={() => goTo((current + 1) % slides.length)}
+        onClick={() => goTo((current + 1) % safeSlides.length)}
         className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm flex items-center justify-center text-white transition-all"
         aria-label="Siguiente"
       >
@@ -133,6 +135,14 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
+
+      {/* Degradado inferior — transición suave hacia el fondo celeste */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none z-10"
+        style={{
+          background: "linear-gradient(to bottom, transparent 30%, #D6F0FF 100%)",
+        }}
+      />
     </section>
   );
 }

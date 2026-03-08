@@ -48,17 +48,21 @@ export default function Navbar() {
               {/* brand-logo */}
               <Link href={onHome ? "/#top" : "/"} className="flex items-center gap-3 min-w-0" onClick={() => setOpen(false)}>
                 <Image
-                  src="/logo.png"
+                  src="/logo02.jpg"
                   alt="Instituto Piaget"
                   width={220}
                   height={70}
                   className="h-10 w-auto object-contain"
                   priority
                 />
-                {/* Oculto en móvil */}
-                <div className="hidden lg:block leading-tight min-w-0">
-                  <div className="text-sm font-semibold text-brand-blue truncate">Instituto Piaget</div>
-                </div>
+                <Image
+                  src="/logo.jpg"
+                  alt="Instituto Piaget"
+                  width={220}
+                  height={70}
+                  className="h-10 w-auto object-contain"
+                  priority
+                />
               </Link>
 
               {/* menú desktop */}
