@@ -2,95 +2,199 @@
 slug: "primaria"
 title: "Primaria Montessori"
 displayName: "Primaria"
-subtitle: "Exploramos el universo con imaginación, razón y trabajo colaborativo"
-heroImage: "/uploads/9-primaria-segundo-piso.jpg"
+subtitle: "6 años a 12 años"
+heroImage: "/uploads/primaria-hero.jpg"
 ctaText: "Solicitar información"
 ctaLink: "/#contacto"
 ageRange: "6 – 12 años"
-ageDescription: "El niño de primaria es un explorador del universo."
 
-# Bloque 1: Texto izq | Foto der
-distingueHeading: "Lo que nos distingue en primaria Piaget"
-distingueBody: "Nuestro modelo Montessori de primaria va más allá del aula. Los alumnos investigan, experimentan y presentan sus proyectos ante la comunidad. Cada niño avanza a su ritmo con guías expertos que acompañan su proceso."
-distingueBullets:
-  - Currículo alineado con SEP y enriquecido
-  - Portafolio de evidencias individual
-  - Salones de 20 alumnos máximo
-distingueImage: "/uploads/primaria-lecciones.jpg"
-distingueCtaText: "Únete a la comunidad"
+# ── Bloque "Nos distingue" ────────────────────────────────────────────
+distingueHeading: "Programa Bilingüe"
+distingueBody: ""
+distingueBullets: []
+distingueSubblocks:
+  - title: "🗣 Comunicación Oral y Escrita"
+    body: "Desarrollo del inglés en situaciones reales y significativas."
+  - title: "📚 Aprendizaje Integrado"
+    body: "Inglés presente en matemáticas, ciencias, arte y vida práctica, conectando vocabulario y conceptos."
+  - title: "🎨 Creatividad y Expresión"
+    body: "Se combina el aprendizaje del idioma con proyectos artísticos, música y actividades lúdicas."
+  - title: "🌈 Confianza y Autonomía"
+    body: "Los alumnos se animan a expresarse en inglés, fortaleciendo su seguridad y participación activa."
+distingueImage: "/uploads/primaria-bilingual.jpg"
+distingueCtaText: "Agenda una visita"
 distingueCtaLink: "/#contacto"
 
-# Bloque 2: Foto izq | Texto der
-trabajanHeading: "Así aprenden nuestros alumnos de primaria"
-trabajanBody: "En lugar de exámenes tradicionales, los alumnos desarrollan proyectos de investigación trimestrales donde aplican matemáticas, ciencias, lenguaje y arte para resolver problemas reales de su comunidad."
-trabajanBullets:
-  - Proyectos interdisciplinarios trimestrales
-  - Presentaciones ante padres de familia
-  - Evaluación por rúbricas descriptivas
-trabajanImage: "/uploads/primaria-proyectos.jpg"
-trabajanCtaText: "Conoce más"
-trabajanCtaLink: "/#contacto"
-
-# Bloque 3: Texto izq | Foto der
-desarrolloHeading: "Desarrollo académico con visión de futuro"
-desarrolloBody: "Cubrimos y superamos los aprendizajes esperados de la SEP. Nuestros egresados de primaria ingresan a secundaria con bases sólidas en pensamiento lógico, comprensión lectora y habilidades sociales."
-desarrolloBullets:
-  - Matemáticas con material Montessori certificado
-  - Español con enfoque en lectura crítica
-  - Inglés desde primer grado
-desarrolloImage: "/uploads/primaria-gal-1.jpg"
-desarrolloCtaText: "Ver plan de estudios"
-desarrolloCtaLink: "/#contacto"
-
-# Orgullo Piaget
-orgulloItems:
-  - icon: "🏆"
-    title: "3er lugar nacional – Olimpiada de Matemáticas"
-    body: "Dos alumnos de 6° representaron a Tamaulipas en la fase nacional 2024."
+# ── Áreas de desarrollo ────────────────────────────────────────────────
+areasTitle: "Áreas de desarrollo"
+areasItems:
+  - icon: "📚"
+    title: "Lenguaje"
+    body: "Lectura comprensiva, escritura creativa y expresión oral, desarrollando comunicadores seguros y críticos."
+  - icon: "🔢"
+    title: "Matemáticas"
+    body: "Pensamiento lógico y resolución de problemas, avanzando de lo concreto a lo abstracto con materiales Montessori."
+  - icon: "🌎"
+    title: "Educación Cósmica"
+    body: "Conocimiento de historia, geografía, ciencias y cultura, entendiendo la interconexión del mundo y la humanidad."
   - icon: "🔬"
-    title: "Premio Explora SEP 2024"
-    body: "Proyecto de ciencias sobre purificación de agua reconocido a nivel estatal."
-  - icon: "🎖️"
-    title: "100% pase a secundaria"
-    body: "Todos nuestros egresados ingresan a secundaria con evaluación sobresaliente."
+    title: "Ciencias y Exploración"
+    body: "Aprendizaje basado en la curiosidad, la observación y la experimentación."
+  - icon: "🎨"
+    title: "Arte y Expresión"
+    body: "Desarrollo de la creatividad, la apreciación estética y la expresión personal."
+  - icon: "🎵"
+    title: "Música"
+    body: "Ritmo, melodía y expresión corporal que fortalecen la sensibilidad y la disciplina."
+  - icon: "🌐"
+    title: "Sistema Bilingüe"
+    body: "Comunicación en un segundo idioma de manera natural, fomentando fluidez y confianza."
+
+# ── Programas de inglés ────────────────────────────────────────────────
+programasTitle: "Programas Académicos de inglés"
+programasItems:
+  - name: "Tynker"
+  - name: "World Discovery Lab"
+  - name: "Scholastic"
+  - name: "Oxford Discover"
+  - name: "Oxford Discover Science"
+
+# ── Valores ────────────────────────────────────────────────────────────
+valoresTitle: "Valores"
+valoresItems:
+  - "🤝 Respeto"
+  - "🌱 Autonomía"
+  - "🎯 Responsabilidad"
+  - "💬 Trabajo colaborativo"
+  - "🌍 Conciencia social y ambiental"
+  - "💡 Pensamiento crítico"
+  - "⭐ Perseverancia"
+
+# ── En esta etapa los alumnos trabajan ───────────────────────────────
+etapaTitle: "En esta etapa, los alumnos trabajan"
+etapaFooter: "Como base fundamental, más que centrarnos en la memorización, buscamos formar una conciencia activa, animándolos a cuestionarse, reflexionar, plantear dudas, reaccionar y descubrir por sí mismos a través de la observación, la experimentación, la representación y la práctica."
+etapaItems:
+  - icon: "🧹"
+    title: "Vida práctica"
+    body: "Fomentamos la autonomía, la responsabilidad y el liderazgo. Los alumnos fortalecen su organización personal y el trabajo en equipo."
+  - icon: "🌎"
+    title: "Educación Cósmica"
+    body: "Guiamos a los niños en el descubrimiento del universo, la historia, la geografía y las ciencias, despertando su curiosidad."
+  - icon: "📚"
+    title: "Lenguaje"
+    body: "Potenciamos la lectura comprensiva, la expresión oral y escrita, y la creación de textos, formando comunicadores seguros y creativos."
+  - icon: "🔢"
+    title: "Matemáticas"
+    body: "Desarrollamos el pensamiento lógico y analítico a través de materiales Montessori que llevan de lo concreto a lo abstracto."
+  - icon: "🌐"
+    title: "Inglés"
+    body: "Programa bilingüe que favorece una comunicación natural y fluida en un segundo idioma, preparándolos para un mundo globalizado."
+  - icon: "🎵"
+    title: "Música"
+    body: "Estimulamos la sensibilidad, el ritmo y la expresión artística, fortaleciendo la confianza y la creatividad."
+  - icon: "🖌"
+    title: "Arte"
+    body: "Impulsamos la imaginación y la expresión personal mediante diversas técnicas, promoviendo la apreciación estética y el talento individual."
+
+# ── Desarrollo Académico ──────────────────────────────────────────────
+trabajanHeading: "Desarrollo Académico"
+trabajanBody: "Desarrollamos las habilidades que marcan la diferencia. Como base fundamental, más que centrarnos en la memorización, buscamos formar una conciencia activa, animándolos a cuestionarse, reflexionar, plantear dudas, reaccionar y descubrir por sí mismos a través de la observación, la experimentación, la representación y la práctica."
+trabajanBullets:
+  - "Pensamiento Crítico y Resolución de Problemas: aprender a cuestionar, investigar y resolver desafíos complejos con autonomía."
+  - "Colaboración Real: trabajar en equipo en proyectos de larga duración, negociando y asumiendo responsabilidades."
+  - "Inteligencia Emocional y Social: entenderse a sí mismos, navegar las relaciones grupales y desarrollar responsabilidad moral."
+  - "Propósito y Pasión: los alumnos siguen sus intereses y guían su propia investigación para un aprendizaje significativo."
+trabajanImage: "/uploads/primaria-academico.jpg"
+trabajanCtaText: "Agenda una visita"
+trabajanCtaLink: "/#contacto"
+trabajanFooter: "El resultado: Tu hijo/a se convierte en un investigador independiente y un líder capaz, listo para adaptarse a cualquier desafío que el futuro le presente."
+
+# ── Orgullo Piaget ─────────────────────────────────────────────────────
+orgulloTitle: "Orgullo Piaget"
+orgulloSubtitle: "Ellos son nuestros alumnos ganadores en diferentes concursos académicos y culturales — Orgullo de Reynosa · Orgullo de Tamaulipas · Orgullo Nacional"
 orgulloVideoUrl: ""
 orgulloVideoPoster: "/uploads/primaria-video-poster.jpg"
+orgulloItems: []
 
+# ── Talleres ───────────────────────────────────────────────────────────
 talleres:
-  - icon: "💻"
-    name: "Programación y robótica"
-    description: "Scratch, Lego Mindstorms y proyectos de coding para desarrollar el pensamiento computacional."
-  - icon: "🔬"
-    name: "Laboratorio de ciencias"
-    description: "Experimentos semanales de química, física y biología en nuestro laboratorio equipado."
+  - icon: "🥋"
+    name: "Karate"
+    description: "Disciplina, respeto y desarrollo físico a través de las artes marciales."
   - icon: "🎨"
-    name: "Artes integradas"
-    description: "Pintura, escultura, música y teatro en talleres que enriquecen el currículo académico."
+    name: "Creatividad"
+    description: "Expresión artística libre que desarrolla la imaginación y la motricidad fina."
+  - icon: "🤸"
+    name: "Gimnasia"
+    description: "Coordinación, equilibrio y fuerza corporal de manera lúdica y divertida."
+  - icon: "💃"
+    name: "Baile / Danza"
+    description: "Ritmo, expresión corporal y disfrute del movimiento en grupo."
   - icon: "⚽"
-    name: "Deportes"
-    description: "Fútbol, basquetbol, natación y atletismo en instalaciones propias."
+    name: "Fútbol"
+    description: "Trabajo en equipo, coordinación y valores deportivos."
+  - icon: "🧘"
+    name: "Yoga"
+    description: "Equilibrio, concentración y bienestar emocional a través del movimiento consciente."
+  - icon: "🍳"
+    name: "Cocina"
+    description: "Autonomía, matemáticas y ciencias aplicadas en la preparación de alimentos."
+  - icon: "♟"
+    name: "Ajedrez"
+    description: "Pensamiento estratégico, concentración y toma de decisiones."
+  - icon: "🤖"
+    name: "Robótica"
+    description: "Programación, lógica y creatividad tecnológica desde edades tempranas."
+  - icon: "📷"
+    name: "Fotografía"
+    description: "Observación, creatividad visual y narración a través de la imagen."
+  - icon: "🖌"
+    name: "Pintura"
+    description: "Técnicas artísticas que potencian la expresión personal y la sensibilidad estética."
+  - icon: "🏀"
+    name: "Básquetbol"
+    description: "Deporte en equipo que desarrolla agilidad, trabajo colaborativo y disciplina."
+  - icon: "🎵"
+    name: "Música"
+    description: "Ritmo, melodía e interpretación musical para la sensibilidad y la concentración."
 
+# ── Horarios ──────────────────────────────────────────────────────────
+horariosSubtitle: "Horarios Sin Costo adicional"
 horarios:
-  - dia: "Lunes a Viernes"
-    horario: "8:00 – 15:00"
-  - dia: "Actividades extracurriculares"
-    horario: "15:00 – 17:00"
+  - dia: "Primaria Menor — Lunes a Viernes"
+    horario: "7:30 a.m. – 2:20 p.m."
+  - dia: "Primaria Mayor — Lunes a Viernes"
+    horario: "7:30 a.m. – 2:40 p.m."
+  - dia: "Taller Martes (menor) y Miércoles (mayor)"
+    horario: "Salida 3:00 p.m."
+  - dia: "Early Access — Lunes a Viernes"
+    horario: "6:50 a.m. – 7:30 a.m."
+  - dia: "Estancia"
+    horario: "Hasta las 6:00 p.m."
 
+# ── Galería ────────────────────────────────────────────────────────────
 gallery:
   - image: "/uploads/primaria-gal-1.jpg"
-    caption: "Laboratorio de ciencias"
+    caption: "Salones"
   - image: "/uploads/primaria-gal-2.jpg"
-    caption: "Sala de cómputo"
+    caption: "Material Montessori"
   - image: "/uploads/primaria-gal-3.jpg"
-    caption: "Actividades deportivas"
+    caption: "Laboratorio de ciencias"
+  - image: "/uploads/primaria-gal-4.jpg"
+    caption: "Talleres"
 
+# ── FAQ ───────────────────────────────────────────────────────────────
 faq:
-  - question: "¿Cómo es la evaluación en primaria Montessori?"
-    answer: "Utilizamos evaluación por portafolio y rúbricas descriptivas. No hay exámenes tradicionales hasta 5° y 6° grado."
-  - question: "¿El plan de estudios cumple con la SEP?"
-    answer: "Sí, cubrimos e incluso superamos los aprendizajes esperados de la SEP."
-  - question: "¿Cuántos alumnos hay por salón?"
-    answer: "Máximo 20 alumnos por grupo con un guía Montessori certificado."
+  - question: "¿Cómo es el sistema bilingüe en primaria?"
+    answer: "El inglés está integrado en todas las materias — no es una clase separada. Los alumnos aprenden matemáticas, ciencias y arte con vocabulario en inglés de manera natural."
+  - question: "¿Qué es la Educación Cósmica Montessori?"
+    answer: "Es el área que conecta historia, geografía, ciencias y cultura para que los niños comprendan cómo todo en el universo está interconectado. Es una de las características más distintivas del nivel primaria Montessori."
+  - question: "¿Los alumnos tienen tarea?"
+    answer: "Asignamos tareas cortas y significativas orientadas a la investigación y la práctica, no a la memorización. El objetivo es extender el aprendizaje de forma placentera."
+  - question: "¿Cómo se evalúa a los alumnos?"
+    answer: "Usamos portafolios, autoevaluaciones y reportes narrativos. No calificamos con números hasta donde la SEP lo permite — priorizamos la comprensión profunda."
+  - question: "¿Tienen certificación oficial SEP?"
+    answer: "Sí, estamos incorporados a la SEP. Los alumnos obtienen certificado oficial de primaria con validez nacional."
 
 blocks: []
 ---

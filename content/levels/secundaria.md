@@ -2,94 +2,176 @@
 slug: "secundaria"
 title: "Secundaria Montessori"
 displayName: "Secundaria"
-subtitle: "Construimos identidad, pensamiento crítico y ciudadanía activa"
-heroImage: "/uploads/35-patio-secundaria.jpg"
+subtitle: ""
+heroImage: "/uploads/secundaria-hero.jpg"
 ctaText: "Solicitar información"
 ctaLink: "/#contacto"
 ageRange: "12 – 15 años"
-ageDescription: "La adolescencia es una segunda oportunidad de construir la humanidad. En secundaria acompañamos ese proceso con proyectos reales, mentores y comunidad."
 
-# Bloque 1: Texto izq | Foto der
-distingueHeading: "Lo que nos distingue en Secundaria Piaget"
-distingueBody: "Inspirados en el modelo Erdkinder de Montessori, los adolescentes gestionan proyectos productivos, toman decisiones colectivas y aprenden responsabilidad real. Cada alumno tiene un mentor personal que acompaña su proceso."
-distingueBullets:
-  - Asamblea estudiantil y empresa estudiantil
-  - 1 mentor por cada 8 alumnos
-  - Certificado oficial SEP con validez nacional
-distingueImage: "/uploads/secundaria-erdkinder.jpg"
+# ── Bloque "Nos distingue" ────────────────────────────────────────────
+distingueHeading: "Programa Bilingüe"
+distingueBody: ""
+distingueBullets: []
+distingueSubblocks:
+  - title: "🗣 Comunicación Avanzada"
+    body: "Desarrollo integral del inglés en expresión oral, escrita y comprensión lectora."
+  - title: "📚 Aprendizaje Interdisciplinario"
+    body: "Integración del idioma en matemáticas, ciencias, humanidades y proyectos de investigación."
+  - title: "💡 Pensamiento Crítico"
+    body: "Fomenta análisis, debate y reflexión en inglés, fortaleciendo la autonomía intelectual."
+  - title: "🎨 Creatividad y Proyecto"
+    body: "Aplicación del idioma en proyectos artísticos, científicos y tecnológicos."
+  - title: "🌈 Confianza y Liderazgo"
+    body: "Promueve seguridad, participación activa y habilidades de colaboración en un entorno global."
+distingueImage: "/uploads/secundaria-bilingual.jpg"
 distingueCtaText: "Agenda una visita"
 distingueCtaLink: "/#contacto"
 
-# Bloque 2: Foto izq | Texto der
-trabajanHeading: "Así aprenden a pensar críticamente"
-trabajanBody: "Debate, oratoria, producción audiovisual y laboratorio avanzado son parte del día a día. Los alumnos presentan sus proyectos ante jurados reales y aprenden a defender sus ideas con argumentos sólidos."
+# ── Áreas de desarrollo ────────────────────────────────────────────────
+areasTitle: "Áreas de desarrollo"
+areasItems:
+  - icon: "🔎"
+    title: "Pensamiento y habilidades académicas"
+    body: "Impulsamos el análisis crítico, la comprensión profunda de la lectura y la capacidad para enfrentar y resolver desafíos de manera efectiva."
+  - icon: "🌱"
+    title: "Desarrollo personal y emocional"
+    body: "Fortalecemos la autoestima y promovemos la inteligencia emocional, favoreciendo el autoconocimiento y la seguridad personal."
+  - icon: "🤝"
+    title: "Desarrollo social"
+    body: "Fomentamos la sana convivencia, el trabajo colaborativo y el respeto mutuo como bases para una comunidad sólida."
+  - icon: "🏃"
+    title: "Desarrollo físico"
+    body: "Promovemos la actividad deportiva y la activación corporal para favorecer la salud, la coordinación y el bienestar integral."
+  - icon: "💻"
+    title: "Desarrollo tecnológico"
+    body: "Preparamos a los estudiantes para el entorno digital, incentivando el uso consciente, responsable y productivo de la tecnología."
+
+# ── Programas de inglés ────────────────────────────────────────────────
+programasTitle: "Programas Académicos de Inglés"
+programasItems:
+  - name: "Enterprising Leadership"
+  - name: "Science & Technology"
+  - name: "Tynker"
+  - name: "Scholastic"
+  - name: "McMillan"
+
+# ── Valores ────────────────────────────────────────────────────────────
+valoresTitle: "Valores"
+valoresItems:
+  - "🤝 Respeto"
+  - "🌱 Autonomía"
+  - "🎯 Responsabilidad"
+  - "💬 Trabajo Colaborativo"
+  - "🌍 Conciencia Social y Ambiental"
+  - "💡 Pensamiento Crítico"
+  - "⭐ Perseverancia y Resiliencia"
+
+# ── Proyectos Especiales (usa etapaItems) ─────────────────────────────
+etapaTitle: "Proyectos Especiales"
+etapaItems:
+  - icon: "🔬"
+    title: "Proyectos de Investigación"
+    body: "Trabajos interdisciplinarios donde los alumnos analizan, experimentan y presentan soluciones a problemáticas reales."
+  - icon: "🌍"
+    title: "Impacto Social y Comunitario"
+    body: "Iniciativas solidarias que fomentan el compromiso social y la participación activa en la comunidad."
+  - icon: "💡"
+    title: "Emprendimiento"
+    body: "Creación y desarrollo de ideas innovadoras que fortalecen liderazgo, creatividad y pensamiento estratégico."
+  - icon: "🎭"
+    title: "Proyectos Artísticos y Culturales"
+    body: "Espacios para expresar talento a través del arte, la música, el teatro y actividades culturales."
+  - icon: "💻"
+    title: "Innovación y Tecnología"
+    body: "Aplicación práctica de herramientas digitales en proyectos académicos y creativos."
+  - icon: "🌱"
+    title: "Educación Ambiental"
+    body: "Actividades orientadas a la sostenibilidad y el cuidado responsable del entorno."
+
+# ── Desarrollo Académico ──────────────────────────────────────────────
+trabajanHeading: "Desarrollo Académico"
+trabajanBody: "Nuestro programa con enfoque en la metodología Montessori responde a la necesidad de independencia, identidad y propósito. El aprendizaje se vuelve significativo, práctico y conectado con la vida real."
 trabajanBullets:
-  - Proyectos de impacto comunitario real
-  - Presentaciones ante jurados externos
-  - Servicio comunitario obligatorio
-trabajanImage: "/uploads/secundaria-mentoria.jpg"
-trabajanCtaText: "Conoce más"
+  - "🔎 Aprendizaje basado en proyectos: los estudiantes investigan, analizan y desarrollan propuestas que integran distintas áreas del conocimiento."
+  - "🤝 Trabajo colaborativo: se fomenta el diálogo, el debate y la construcción conjunta de soluciones, fortaleciendo habilidades sociales."
+  - "🌍 Vinculación con la realidad: el aprendizaje se conecta con el entorno social, económico y ambiental, promoviendo conciencia y responsabilidad."
+  - "💡 Pensamiento crítico y autonomía: se impulsa la toma de decisiones, la reflexión profunda y el desarrollo de criterio propio."
+  - "📊 Guía y acompañamiento: el docente actúa como orientador, brindando herramientas y seguimiento personalizado."
+  - "🌱 Formación integral: se atiende el desarrollo académico, emocional, social y ético del adolescente."
+trabajanImage: "/uploads/secundaria-academico.jpg"
+trabajanCtaText: "Agenda una visita"
 trabajanCtaLink: "/#contacto"
 
-# Bloque 3: Texto izq | Foto der
-desarrolloHeading: "Desarrollo académico con visión universitaria"
-desarrolloBody: "Cubrimos y superamos el plan de estudios SEP. Nuestros egresados de secundaria ingresan a preparatoria con pensamiento crítico desarrollado, habilidades de investigación y orientación vocacional clara."
-desarrolloBullets:
-  - Visitas a universidades desde 1er grado
-  - Talleres de autoconocimiento y vocación
-  - Inglés avanzado con certificación Cambridge
-desarrolloImage: "/uploads/secundaria-gal-1.jpg"
-desarrolloCtaText: "Únete a la comunidad"
-desarrolloCtaLink: "/#contacto"
-
-orgulloItems:
-  - icon: "🏆"
-    title: "Premio Nacional Emprendimiento Juvenil 2023"
-    body: "Empresa estudiantil de secundaria ganó primer lugar a nivel nacional."
-  - icon: "🎙️"
-    title: "Campeones regionales de debate"
-    body: "Equipo de 3° de secundaria representó a Tamaulipas en la final nacional."
-  - icon: "🎓"
-    title: "100% pase a preparatoria"
-    body: "Todos los egresados continúan estudios, el 90% en instituciones de primer nivel."
+# ── Orgullo Piaget ─────────────────────────────────────────────────────
+orgulloTitle: "Orgullo Piaget"
+orgulloSubtitle: "Ellos son nuestros alumnos ganadores en diferentes concursos académicos y culturales — Orgullo de Reynosa · Orgullo de Tamaulipas · Orgullo Nacional"
 orgulloVideoUrl: ""
 orgulloVideoPoster: "/uploads/secundaria-video-poster.jpg"
+orgulloItems: []
 
+# ── Talleres ───────────────────────────────────────────────────────────
 talleres:
-  - icon: "🏛️"
-    name: "Debate y oratoria"
-    description: "Desarrollamos la capacidad argumentativa y la expresión oral en foros formales e informales."
-  - icon: "📊"
-    name: "Emprendimiento"
-    description: "Los alumnos crean y gestionan microempresas estudiantiles con impacto real en la comunidad."
-  - icon: "🎬"
-    name: "Producción audiovisual"
-    description: "Video, podcast, fotografía y diseño gráfico para comunicar sus proyectos al mundo."
-  - icon: "🧪"
-    name: "Laboratorio avanzado"
-    description: "Química orgánica, genética y física experimental con equipos de laboratorio profesional."
+  - icon: "💃"
+    name: "Baile / Danza"
+    description: "Ritmo, expresión corporal y disfrute del movimiento en grupo."
+  - icon: "⚽"
+    name: "Fútbol"
+    description: "Trabajo en equipo, coordinación y valores deportivos."
+  - icon: "🍳"
+    name: "Cocina"
+    description: "Autonomía, matemáticas y ciencias aplicadas en la preparación de alimentos."
+  - icon: "♟"
+    name: "Ajedrez"
+    description: "Pensamiento estratégico, concentración y toma de decisiones."
+  - icon: "🤖"
+    name: "Robótica"
+    description: "Programación, lógica y creatividad tecnológica."
+  - icon: "📷"
+    name: "Fotografía"
+    description: "Observación, creatividad visual y narración a través de la imagen."
+  - icon: "🖌"
+    name: "Pintura"
+    description: "Técnicas artísticas que potencian la expresión personal y la sensibilidad estética."
+  - icon: "🏀"
+    name: "Básquetbol"
+    description: "Deporte en equipo que desarrolla agilidad, trabajo colaborativo y disciplina."
+  - icon: "🎵"
+    name: "Música"
+    description: "Ritmo, melodía e interpretación musical para la sensibilidad y la concentración."
 
+# ── Horarios ──────────────────────────────────────────────────────────
+horariosSubtitle: "Horarios Sin Costo adicional"
 horarios:
-  - dia: "Lunes a Viernes"
-    horario: "7:30 – 15:30"
-  - dia: "Actividades complementarias"
-    horario: "15:30 – 18:00"
+  - dia: "Secundaria — Lunes a Viernes"
+    horario: "7:00 a.m. – 3:00 p.m."
+  - dia: "Early Access — Lunes a Viernes"
+    horario: "6:50 a.m. – 7:00 a.m."
+  - dia: "Estancia"
+    horario: "Hasta las 6:00 p.m."
 
+# ── Galería ────────────────────────────────────────────────────────────
 gallery:
   - image: "/uploads/secundaria-gal-1.jpg"
-    caption: "Asamblea estudiantil"
+    caption: "Salones"
   - image: "/uploads/secundaria-gal-2.jpg"
-    caption: "Laboratorio de química"
+    caption: "Laboratorio"
   - image: "/uploads/secundaria-gal-3.jpg"
-    caption: "Proyecto de empresa estudiantil"
+    caption: "Talleres"
+  - image: "/uploads/secundaria-gal-4.jpg"
+    caption: "Vida estudiantil"
 
+# ── FAQ ───────────────────────────────────────────────────────────────
 faq:
-  - question: "¿Se puede transferir a secundaria Piaget desde otra escuela?"
+  - question: "¿Se puede transferir desde otra escuela tradicional?"
     answer: "Sí, realizamos una evaluación diagnóstica y ofrecemos un periodo de adaptación de 2-3 meses al modelo Montessori."
   - question: "¿Tienen certificación oficial de la SEP?"
     answer: "Sí, estamos incorporados a la SEP. Los alumnos obtienen certificado oficial de secundaria con validez nacional."
-  - question: "¿Cómo funciona el sistema de mentorías?"
-    answer: "Cada alumno tiene un mentor asignado con quien se reúne semanalmente para revisar su progreso académico y personal."
+  - question: "¿Cómo funciona el sistema de proyectos?"
+    answer: "Los alumnos trabajan en proyectos interdisciplinarios de larga duración que integran matemáticas, ciencias, humanidades y arte, presentándolos ante jurados reales."
+  - question: "¿Hay actividades extracurriculares?"
+    answer: "Sí, ofrecemos talleres de robótica, ajedrez, fotografía, música, deportes y más, sin costo adicional dentro del horario establecido."
+  - question: "¿Cómo es el acompañamiento emocional en secundaria?"
+    answer: "Contamos con orientadores que acompañan a cada alumno en su desarrollo personal, emocional y académico durante toda la etapa."
 
 blocks: []
 ---

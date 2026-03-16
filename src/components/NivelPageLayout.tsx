@@ -6,7 +6,9 @@ import NivelHero from "@/components/NivelHero";
 import NivelDistingue from "@/components/NivelDistingue";
 import NivelAreasDesarrollo from "@/components/NivelAreasDesarrollo";
 import NivelEtapaTrabajan from "@/components/NivelEtapaTrabajan";
+import NivelMultigradoBilingual from "@/components/NivelMultigradoBilingual";
 import NivelTalleres from "@/components/NivelTalleres";
+import NivelClubInteract from "@/components/NivelClubInteract";
 import NivelOrgulloPiaget from "@/components/NivelOrgulloPiaget";
 import NivelHorarios from "@/components/NivelHorarios";
 import NivelGallery from "@/components/NivelGallery";
@@ -25,18 +27,32 @@ export default function NivelPage({ slug }: NivelPageProps) {
   const contact  = readMd<ContactData>("home/contact.md");
   const location = readMd<LocationData>("home/location.md");
 
+  const hasDistingue   = !!data.distingueHeading;
+  const hasAreas       = !!(data.areasItems && data.areasItems.length > 0);
+  const hasMultigrado  = !!(data.multigradoBody || (data.bilingueItems && data.bilingueItems.length > 0));
+  const hasEtapa       = !!(data.etapaItems && data.etapaItems.length > 0);
+  const hasTrabajan    = !!data.trabajanHeading;
+  const hasDesarrollo  = !!data.desarrolloHeading;
+  const hasInteract    = !!(data.interactBody || (data.interactItems && data.interactItems.length > 0));
+  const hasOrgulloFull = !!(data.orgulloTitle || data.orgulloSubtitle);
+  const hasOrgulloEmbed = !hasOrgulloFull && !!(data.orgulloItems && data.orgulloItems.length > 0 || data.orgulloVideoUrl);
+  const hasTalleres    = !!(data.talleres && data.talleres.length > 0);
+  const hasHorarios    = !!(data.horarios && data.horarios.length > 0);
+  const hasGallery     = !!(data.gallery && data.gallery.length > 0);
+  const hasFaq         = !!(data.faq && data.faq.length > 0);
+
   return (
     <>
       <Navbar />
       <main>
 
-        {/* ── 1. HERO ───────────────────────────────────────────────── */}
+        {/* 1. HERO */}
         <NivelHero data={data} />
 
-        {/* ── 2. "Nos distingue" — Texto izq / Foto der ────────────── */}
-        {data.distingueHeading && (
+        {/* 2. Nos distingue */}
+        {hasDistingue && (
           <NivelDistingue
-            heading={data.distingueHeading}
+            heading={data.distingueHeading!}
             body={data.distingueBody ?? ""}
             bullets={data.distingueBullets}
             subblocks={data.distingueSubblocks}
@@ -47,30 +63,51 @@ export default function NivelPage({ slug }: NivelPageProps) {
           />
         )}
 
-        {/* ── 3. Áreas de desarrollo + Valores ─────────────────────── */}
-        {data.areasItems && data.areasItems.length > 0 && (
+        {/* 3. Áreas de desarrollo + Valores */}
+        {hasAreas && (
           <NivelAreasDesarrollo
             title={data.areasTitle}
-            items={data.areasItems}
+            subtitle={data.areasSubtitle}
+            items={data.areasItems!}
             valoresTitle={data.valoresTitle}
+            valoresSubtitle={data.valoresSubtitle}
             valoresItems={data.valoresItems}
+            valoresCards={data.valoresCards}
+            valoresFooter={data.valoresFooter}
+            programasTitle={data.programasTitle}
+            programasItems={data.programasItems}
           />
         )}
 
-        {/* ── 4. En esta etapa, los niños trabajan ─────────────────── */}
-        {data.etapaItems && data.etapaItems.length > 0 && (
+        {/* 4. Multigrado + Bilingüe */}
+        {hasMultigrado && (
+          <NivelMultigradoBilingual
+            multigradoTitle={data.multigradoTitle}
+            multigradoBody={data.multigradoBody}
+            bilingueTitle={data.bilingueTitle}
+            bilingueItems={data.bilingueItems}
+            programasTitle={data.programasTitle}
+            programasItems={data.programasItems}
+          />
+        )}
+
+        {/* 5. En esta etapa los alumnos trabajan */}
+        {hasEtapa && (
           <NivelEtapaTrabajan
             title={data.etapaTitle}
-            items={data.etapaItems}
+            subtitle={data.etapaSubtitle}
+            items={data.etapaItems!}
+            footer={data.etapaFooter}
           />
         )}
 
-        {/* ── 5. Desarrollo Académico — Foto izq / Texto der ───────── */}
-        {data.trabajanHeading && (
+        {/* 6. Desarrollo Académico */}
+        {hasTrabajan && (
           <NivelDistingue
-            heading={data.trabajanHeading}
+            heading={data.trabajanHeading!}
             body={data.trabajanBody ?? ""}
             bullets={data.trabajanBullets}
+            footer={data.trabajanFooter}
             image={data.trabajanImage}
             ctaText={data.trabajanCtaText}
             ctaLink={data.trabajanCtaLink}
@@ -78,10 +115,10 @@ export default function NivelPage({ slug }: NivelPageProps) {
           />
         )}
 
-        {/* ── 6. Bloque 3 opcional ─────────────────────────────────── */}
-        {data.desarrolloHeading && (
+        {/* 7. Bloque 3 opcional */}
+        {hasDesarrollo && (
           <NivelDistingue
-            heading={data.desarrolloHeading}
+            heading={data.desarrolloHeading!}
             body={data.desarrolloBody ?? ""}
             bullets={data.desarrolloBullets}
             image={data.desarrolloImage}
@@ -91,59 +128,85 @@ export default function NivelPage({ slug }: NivelPageProps) {
           />
         )}
 
-        {/* ── 7. BENTO 3 FILAS ─────────────────────────────────────── */}
-        <section className="section-sky py-14 lg:py-20">
-          <div className={W}>
-            <div className="flex flex-col gap-6">
+        {/* 7b. Club Interact — antes de Orgullo Piaget */}
+        {hasInteract && (
+          <NivelClubInteract
+            title={data.interactTitle}
+            body={data.interactBody}
+            items={data.interactItems}
+          />
+        )}
 
-              {/* Fila 1: Talleres (con carrusel) | Orgullo Piaget */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
-                <div className="glass-card rounded-2xl p-8">
-                  <NivelTalleres
-                    talleres={data.talleres ?? []}
-                    images={data.talleresImages ?? []}
-                    embedded
-                  />
-                </div>
-                <div className="glass-card rounded-2xl p-8">
-                  <NivelOrgulloPiaget
-                    videoUrl={data.orgulloVideoUrl}
-                    videoPoster={data.orgulloVideoPoster}
-                    items={data.orgulloItems ?? []}
-                  />
-                </div>
+        {/* 8a. Orgullo Piaget — full width (con título propio) */}
+        {hasOrgulloFull && (
+          <NivelOrgulloPiaget
+            title={data.orgulloTitle}
+            subtitle={data.orgulloSubtitle}
+            videoUrl={data.orgulloVideoUrl}
+            videoPoster={data.orgulloVideoPoster}
+            items={data.orgulloItems ?? []}
+            fullWidth={true}
+          />
+        )}
+
+        {/* 8b. Orgullo Piaget — embedded en glass-card */}
+        {hasOrgulloEmbed && (
+          <section className="section-sky py-14 lg:py-20">
+            <div className={W}>
+              <div className="glass-card rounded-2xl p-8">
+                <NivelOrgulloPiaget
+                  videoUrl={data.orgulloVideoUrl}
+                  videoPoster={data.orgulloVideoPoster}
+                  items={data.orgulloItems ?? []}
+                  fullWidth={false}
+                />
               </div>
+            </div>
+          </section>
+        )}
 
-              {/* Fila 2: Horarios (con carrusel) | Galería */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
-                <div className="glass-card rounded-2xl p-8">
+        {/* 9. Talleres */}
+        {hasTalleres && (
+          <NivelTalleres talleres={data.talleres!} />
+        )}
+
+        {/* 9b. Club Interact — solo preparatoria */}
+
+        {/* 10. Horarios | Galería */}
+        {(hasHorarios || hasGallery) && (
+          <section className="section-sky py-14 lg:py-20">
+            <div className={W}>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                {hasHorarios && (
                   <NivelHorarios
-                    horarios={data.horarios ?? []}
+                    horarios={data.horarios!}
                     subtitle={data.horariosSubtitle}
-                    images={data.horariosImages ?? []}
-                    embedded
+                    embedded={true}
                   />
-                </div>
-                <div className="glass-card rounded-2xl overflow-hidden">
-                  <NivelGallery gallery={data.gallery ?? []} embedded />
-                </div>
+                )}
+                {hasGallery && (
+                  <NivelGallery gallery={data.gallery!} embedded={true} />
+                )}
               </div>
+            </div>
+          </section>
+        )}
 
-              {/* Fila 3: FAQ | Mapa */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
-                <div className="glass-card rounded-2xl p-8">
-                  <NivelFaq faq={data.faq ?? []} embedded />
-                </div>
-                <div className="glass-card rounded-2xl overflow-hidden" style={{ minHeight: "380px" }}>
+        {/* 11. FAQ | Mapa */}
+        {hasFaq && (
+          <section className="section-sky py-14 lg:py-20">
+            <div className={W}>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <NivelFaq faq={data.faq!} embedded={true} />
+                <div className="rounded-2xl overflow-hidden" style={{ minHeight: "380px" }}>
                   <LocationSection data={location} embedded />
                 </div>
               </div>
-
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
-        {/* ── 8. CONTACTO — igual al home ──────────────────────────── */}
+        {/* 12. Contacto */}
         <ContactSection data={contact} />
 
       </main>

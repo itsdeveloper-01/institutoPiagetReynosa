@@ -2,94 +2,193 @@
 slug: "kinder"
 title: "Casa de Niños – Kinder"
 displayName: "Casa de Niños"
-subtitle: "La etapa de la explosión del aprendizaje y la curiosidad sin límites"
-heroImage: "/uploads/8-salones-preescolar-2.jpg"
+subtitle: "3 años a 6 años"
+heroImage: "/uploads/kinder-hero.jpg"
 ctaText: "Solicitar información"
 ctaLink: "/#contacto"
 ageRange: "3 – 6 años"
-ageDescription: "El periodo sensible por excelencia. Los niños absorben el lenguaje, los números y el mundo con una capacidad única que Montessori aprovecha al máximo."
 
-# Bloque 1: Texto izq | Foto der
-distingueHeading: "Lo que nos distingue en Casa de Niños"
-distingueBody: "El ambiente es el tercer maestro. La Casa de Niños está organizada en cinco áreas: Vida Práctica, Sensorial, Lenguaje, Matemáticas y Cultura. Cada material tiene un propósito específico y está al alcance del niño."
-distingueBullets:
-  - Materiales Montessori originales certificados
-  - Ciclos de trabajo de 3 horas sin interrupciones
-  - Grupos multigrado de 3 a 6 años
+# ── Bloque "Nos distingue" ────────────────────────────────────────────
+distingueHeading: "Nos distingue"
+distingueBody: "Favorecemos la espontaneidad del niño. Nuestro objetivo es formar al alumno con cimientos sólidos mediante el proceso de enseñanza-aprendizaje, fomentando en ellos la capacidad de identificar y resolver situaciones, tomar decisiones y trabajar en equipo con valores."
+distingueSubblocks:
+  - title: "Material Montessori"
+    body: "El material no es un juguete didáctico ya que fue desarrollado con fines educativos: es material de desarrollo que va creciendo con el niño, disminuye la dificultad gradualmente y tiene «Control de error» para que el niño lo corrija de manera independiente y aprenda de él. Las presentaciones de la guía muestran el uso adecuado del material."
+  - title: "Ambiente"
+    body: "Un ambiente preparado conecta con actividades que ayudan al niño en su vida diaria para un aprendizaje más completo, propiciando la concentración y protección para el desarrollo de su carácter e intelecto. Un buen ambiente Montessori brinda respeto en el aprendizaje y personalidad del niño, promoviendo la expresión de emociones y desarrollando un pensamiento claro, crítico, transformador y creador."
 distingueImage: "/uploads/kinder-ambiente.jpg"
 distingueCtaText: "Agenda una visita"
 distingueCtaLink: "/#contacto"
 
-# Bloque 2: Foto izq | Texto der
-trabajanHeading: "Así descubren la lectura y los números"
-trabajanBody: "A través de las letras de lija, el alfabeto móvil y los libros del ambiente, los niños descubren la lectura y escritura de forma natural y gozosa. Las matemáticas se construyen con material concreto antes de llegar al símbolo."
+# ── Áreas de desarrollo ────────────────────────────────────────────────
+areasTitle: "Áreas de desarrollo"
+areasItems:
+  - icon: "👐"
+    title: "Vida Práctica"
+    body: "Actividades que fortalecen la autonomía, la coordinación, el orden y la concentración a través de experiencias cotidianas significativas."
+  - icon: "🎨"
+    title: "Sensorial"
+    body: "Materiales diseñados para refinar los sentidos y desarrollar la percepción de formas, tamaños, colores, sonidos y texturas, preparando la mente para aprendizajes más complejos."
+  - icon: "🔤"
+    title: "Lenguaje"
+    body: "Enriquecimiento del vocabulario, desarrollo de la expresión oral e inicio natural de la lectura y la escritura."
+  - icon: "🔢"
+    title: "Matemáticas"
+    body: "Introducción concreta y manipulativa al mundo de los números, cantidades y secuencias."
+  - icon: "🌎"
+    title: "Ciencias"
+    body: "Primer acercamiento a la geografía, la naturaleza, la ciencia y las tradiciones, despertando el asombro por el mundo."
+  - icon: "🎵"
+    title: "Expresión Artística"
+    body: "Música, movimiento y arte como medios para potenciar la creatividad y la sensibilidad."
+  - icon: "🌐"
+    title: "Sistema Bilingüe"
+    body: "Comunicación en un segundo idioma de manera natural, fomentando fluidez y confianza."
+
+# ── Valores ────────────────────────────────────────────────────────────
+valoresTitle: "Valores"
+valoresItems:
+  - "💛 Respeto"
+  - "🤝 Autonomía"
+  - "🌟 Responsabilidad"
+  - "🕊 Solidaridad"
+  - "🌈 Amor por el aprendizaje"
+  - "🌱 Autodisciplina"
+
+# ── Multigrado + Bilingüe ─────────────────────────────────────────────
+multigradoTitle: "Multigrado"
+multigradoBody: "En un ambiente Montessori, uno de los grandes beneficios es el grupo de edades mixtas, conocido como «Multigrado». Su objetivo es fomentar la colaboración, el respeto y el aprendizaje entre estudiantes de diferentes edades. Los niños conviven con compañeros más grandes y pequeños; se ayudan unos a otros, los pequeños ven el ejemplo de los mayores, reciben explicaciones y aprenden juntos."
+
+bilingueTitle: "Programa Bilingüe"
+bilingueBody: ""
+bilingueItems:
+  - icon: "🎶"
+    title: "Inmersión Natural"
+    body: "Los niños escuchan y practican inglés de manera cotidiana a través de canciones, juegos y actividades de la vida diaria."
+  - icon: "🗣"
+    title: "Comunicación Oral"
+    body: "Se fomenta la expresión oral desde la interacción lúdica y significativa, favoreciendo la comprensión y el uso espontáneo del idioma."
+  - icon: "📚"
+    title: "Aprendizaje Integrado"
+    body: "Inglés presente en actividades de lenguaje, música, arte y vida práctica, facilitando una conexión natural entre conceptos y vocabulario."
+  - icon: "🎨"
+    title: "Creatividad y Juego"
+    body: "Aprender inglés se combina con la exploración, la experimentación y la expresión artística, potenciando la motivación y el gusto por el idioma."
+  - icon: "🌈"
+    title: "Confianza y Autonomía"
+    body: "Los niños se animan a expresarse en un segundo idioma en un ambiente seguro, respetando sus tiempos y ritmos de aprendizaje."
+
+programasTitle: "Programas Académicos de inglés"
+programasItems:
+  - name: "Tynker"
+  - name: "World Discovery Lab"
+  - name: "Oxford Science"
+  - name: "Oxford Academy"
+
+# ── En esta etapa los alumnos trabajan ───────────────────────────────
+etapaTitle: "En esta etapa, los alumnos trabajan"
+etapaItems:
+  - icon: "🧹"
+    title: "Vida práctica"
+    body: "Promovemos la autonomía desde los primeros años. Los niños aprenden a vestirse, ordenar, servir y cuidar su entorno, fortaleciendo coordinación, concentración e independencia."
+  - icon: "🎨"
+    title: "Área Sensorial"
+    body: "Desarrollan la percepción de formas, tamaños, colores, sonidos y texturas, refinando sus sentidos y preparando la mente para aprendizajes más complejos."
+  - icon: "🔤"
+    title: "Lenguaje"
+    body: "Enriquecemos el vocabulario y favorecemos la expresión oral, iniciando de manera natural el proceso de lectura y escritura."
+  - icon: "🔢"
+    title: "Matemáticas"
+    body: "Introducimos el mundo de los números con materiales concretos que permiten comprender cantidades, secuencias y relaciones."
+  - icon: "🌐"
+    title: "Inglés"
+    body: "Acercamiento natural al segundo idioma a través de canciones, juegos y actividades cotidianas."
+  - icon: "🎵"
+    title: "Música"
+    body: "Estimulamos el sentido del ritmo, la escucha y la expresión corporal, fortaleciendo la sensibilidad y la alegría por aprender."
+  - icon: "🖌"
+    title: "Arte"
+    body: "Fomentamos la creatividad y la expresión libre mediante diversas actividades plásticas adaptadas a su etapa."
+
+# ── Desarrollo Académico ──────────────────────────────────────────────
+trabajanHeading: "Desarrollo Académico"
+trabajanBody: "En Casa de Niños, el aprendizaje se basa en la exploración y la curiosidad natural de los niños. Todo se realiza a su propio ritmo, en un ambiente seguro, ordenado y estimulante, fomentando habilidades cognitivas, sociales y emocionales desde los primeros años."
 trabajanBullets:
-  - Lectura inicial individual a ritmo propio
-  - Fonética integrada al ambiente
-  - Concepto numérico con material concreto
+  - "👐 Vida Práctica: coordinación, autonomía y concentración"
+  - "👀 Sensorial: refinan los sentidos y preparan la mente"
+  - "🗣 Lenguaje: vocabulario y primeras experiencias de comunicación"
+  - "🔢 Matemáticas: números, formas y secuencias de forma concreta"
+  - "🌎 Exploración del Entorno: descubrimiento del mundo y la naturaleza"
 trabajanImage: "/uploads/kinder-lectura.jpg"
-trabajanCtaText: "Conoce más"
+trabajanCtaText: "Agenda una visita"
 trabajanCtaLink: "/#contacto"
 
-# Bloque 3: Texto izq | Foto der
-desarrolloHeading: "Desarrollo académico con base sólida"
-desarrolloBody: "Nuestros egresados de Casa de Niños ingresan a primaria leyendo, escribiendo y con pensamiento matemático desarrollado. La independencia y el amor al aprendizaje son los cimientos que construimos juntos."
-desarrolloBullets:
-  - Lectura y escritura consolidadas al egreso
-  - Inglés integrado desde los 3 años
-  - Hábitos de orden, concentración y autonomía
-desarrolloImage: "/uploads/kinder-gal-1.jpg"
-desarrolloCtaText: "Únete a la comunidad"
-desarrolloCtaLink: "/#contacto"
-
-orgulloItems:
-  - icon: "📚"
-    title: "95% egresa leyendo y escribiendo"
-    body: "Al terminar Casa de Niños, casi todos los alumnos leen y escriben con fluidez."
-  - icon: "🏅"
-    title: "Reconocimiento SEP nivel Excelente"
-    body: "Evaluación de inspección con calificación máxima tres años consecutivos."
-  - icon: "🌟"
-    title: "Familias que regresan por sus hermanos"
-    body: "Más del 80% de nuestras familias inscriben a todos sus hijos en Piaget."
+# ── Orgullo Piaget ─────────────────────────────────────────────────────
+orgulloTitle: "Orgullo Piaget"
+orgulloSubtitle: "Ellos son nuestros alumnos ganadores en diferentes concursos académicos y culturales — Orgullo de Reynosa · Orgullo de Tamaulipas · Orgullo Nacional"
 orgulloVideoUrl: ""
 orgulloVideoPoster: "/uploads/kinder-video-poster.jpg"
+orgulloItems: []
 
+# ── Talleres ───────────────────────────────────────────────────────────
 talleres:
-  - icon: "🧮"
-    name: "Matemáticas vivas"
-    description: "Con el material de cuentas, las barras rojas y el tablero de seguin, los niños construyen el concepto numérico de forma concreta."
-  - icon: "🌍"
-    name: "Geografía y cultura"
-    description: "Mapas de madera, banderas y materiales culturales acercan al niño a la diversidad del mundo."
-  - icon: "🎭"
-    name: "Drama y narración"
-    description: "Teatro guiñol, títeres y rincón de dramatización para desarrollar lenguaje y creatividad."
-  - icon: "🏃"
-    name: "Educación física"
-    description: "Movimiento consciente, coordinación y juego colectivo en espacios amplios."
+  - icon: "🔬"
+    name: "Ciencias Divertidas"
+    description: "Experimentos y descubrimientos que despiertan la curiosidad científica desde temprana edad."
+  - icon: "⭐"
+    name: "Estimulación Temprana"
+    description: "Actividades diseñadas para potenciar el desarrollo integral del niño."
+  - icon: "🥋"
+    name: "Karate"
+    description: "Disciplina, respeto y desarrollo físico a través de las artes marciales."
+  - icon: "🎨"
+    name: "Creatividad"
+    description: "Expresión artística libre que desarrolla la imaginación y la motricidad fina."
+  - icon: "🤸"
+    name: "Gimnasia"
+    description: "Coordinación, equilibrio y fuerza corporal de manera lúdica y divertida."
+  - icon: "💃"
+    name: "Baile / Danza"
+    description: "Ritmo, expresión corporal y disfrute del movimiento en grupo."
+  - icon: "⚽"
+    name: "Fútbol"
+    description: "Trabajo en equipo, coordinación y valores deportivos desde pequeños."
 
+# ── Horarios ──────────────────────────────────────────────────────────
+horariosSubtitle: "Horarios Sin Costo adicional"
 horarios:
-  - dia: "Lunes a Viernes"
-    horario: "8:00 – 14:00"
-  - dia: "Horario extendido"
-    horario: "hasta las 17:00"
+  - dia: "Casa de Niños — Lunes a Viernes"
+    horario: "8:00 a.m. – 1:45 p.m."
+  - dia: "Taller — Jueves"
+    horario: "Salida 3:00 p.m."
+  - dia: "Early Access — Lunes a Viernes"
+    horario: "6:50 a.m. – 8:00 a.m."
+  - dia: "Estancia"
+    horario: "Hasta las 6:00 p.m."
 
+# ── Galería ────────────────────────────────────────────────────────────
 gallery:
   - image: "/uploads/kinder-gal-1.jpg"
-    caption: "Trabajo con material sensorial"
+    caption: "Salones"
   - image: "/uploads/kinder-gal-2.jpg"
-    caption: "Área de lectura"
+    caption: "Material Montessori"
   - image: "/uploads/kinder-gal-3.jpg"
-    caption: "Patio de recreo"
+    caption: "Salón Estimulación Temprana"
+  - image: "/uploads/kinder-gal-4.jpg"
+    caption: "Talleres"
 
+# ── FAQ ───────────────────────────────────────────────────────────────
 faq:
   - question: "¿Los niños aprenden a leer en Casa de Niños?"
-    answer: "Sí, la mayoría de los niños inician y consolidan la lectura entre los 4.5 y 6 años gracias al enfoque Montessori, aunque respetamos el ritmo de cada niño."
+    answer: "Sí, la mayoría de los niños inician y consolidan la lectura entre los 4.5 y 6 años gracias al enfoque Montessori, respetando el ritmo de cada uno."
   - question: "¿Hay tarea para los niños de kinder?"
     answer: "No asignamos tarea formal. Sugerimos actividades de vida práctica en casa que complementan el aprendizaje del ambiente."
+  - question: "¿Qué es el sistema Multigrado?"
+    answer: "Es un grupo con niños de 3 a 6 años conviviendo juntos. Los pequeños aprenden del ejemplo de los mayores y los mayores refuerzan su aprendizaje al explicar a los más pequeños."
   - question: "¿Cómo me informan del progreso de mi hijo?"
-    answer: "Realizamos dos entrevistas formales al año y enviamos informes narrativos trimestrales. Nuestra puerta siempre está abierta."
+    answer: "Realizamos dos entrevistas formales al año y enviamos informes narrativos trimestrales. Nuestra puerta siempre está abierta para conversar."
+  - question: "¿Qué programas de inglés utilizan?"
+    answer: "Trabajamos con Tynker, World Discovery Lab, Oxford Science y Oxford Academy, todos integrados de manera natural al día a día del aula."
 
 blocks: []
 ---

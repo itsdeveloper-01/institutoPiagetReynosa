@@ -2,96 +2,201 @@
 slug: "preparatoria"
 title: "Preparatoria Piaget"
 displayName: "Preparatoria"
-subtitle: "Líderes con visión global, listos para transformar el mundo"
-heroImage: "/uploads/49-salon-preparatoria.jpg"
+subtitle: ""
+heroImage: "/uploads/preparatoria-hero.jpg"
 ctaText: "Solicitar información"
 ctaLink: "/#contacto"
 ageRange: "15 – 18 años"
-ageDescription: "Preparamos a los futuros líderes con rigor académico universitario, habilidades blandas y experiencias internacionales que marcan la diferencia."
 
-# Bloque 1: Texto izq | Foto der
-distingueHeading: "Lo que nos distingue en Preparatoria Piaget"
-distingueBody: "Nuestro plan de estudios fue diseñado en colaboración con universidades nacionales e internacionales. Ofrecemos materias AP, certificaciones en inglés y orientación personalizada para que cada alumno llegue a la universidad que desea."
-distingueBullets:
-  - Materias Advanced Placement reconocidas en EE.UU.
-  - Convenios activos con 15+ universidades
-  - Orientador universitario personal desde 1er semestre
-distingueImage: "/uploads/preparatoria-academico.jpg"
+# ── Bloque "Nos distingue" ─────────────────────────────────────────────
+distingueHeading: "Nos distingue"
+distingueBody: ""
+distingueSubblocks:
+  - title: "Especialidad en Traducción de Inglés"
+    body: "En un mundo cada vez más interconectado, el dominio del inglés es la llave que abre puertas a nivel nacional e internacional. Nuestra especialidad prepara al estudiantado para ser el puente de comunicación en el campo laboral y académico del siglo XXI."
+  - title: "Tecnología y Herramientas Digitales"
+    body: "Contamos con un Laboratorio de Cómputo especializado con plataformas líderes: Macmillan Education Everywhere para el dominio integral del idioma, y Scholastic Learning Zone para comprensión lectora y vocabulario especializado."
+distingueImage: "/uploads/preparatoria-lab.jpg"
 distingueCtaText: "Agenda una visita"
 distingueCtaLink: "/#contacto"
 
-# Bloque 2: Foto izq | Texto der
-trabajanHeading: "Así forjamos líderes con visión global"
-trabajanBody: "Intercambios estudiantiles, Modelo de Naciones Unidas, conferencias con directivos y proyectos de impacto social son parte del currículo. Nuestros alumnos salen al mundo con experiencias reales antes de graduarse."
+# ── Áreas de desarrollo ─────────────────────────────────────────────────
+# CORRECCIÓN 1: título sin "· Especialidad en Administración"
+# CORRECCIÓN 2: subtítulo agregado
+areasTitle: "Áreas de Desarrollo"
+areasSubtitle: "El egresado de esta especialidad desarrolla un perfil versátil y altamente competitivo en áreas como:"
+areasItems:
+  - icon: "🗣"
+    title: "Traducción Técnica"
+    body: "Capacidad profesional para trabajar en distintas situaciones prácticas de traducción."
+  - icon: "🌐"
+    title: "Comunicación Bilingüe"
+    body: "Dominio avanzado de las cuatro habilidades (hablar, escuchar, leer y escribir) en contextos cotidianos y de negocios."
+  - icon: "💼"
+    title: "Competitividad Laboral"
+    body: "Preparación para integrarse a empresas que requieren traductores o intérpretes en niveles locales e internacionales."
+  - icon: "🎓"
+    title: "Fortaleza Académica"
+    body: "Base sólida para continuar estudios superiores en comunicación, lenguas o relaciones internacionales."
+
+# ── CORRECCIÓN 5: Valores → cards con descripción ──────────────────────
+valoresTitle: "Valores"
+valoresSubtitle: "En la preparatoria de Instituto Piaget se promueven valores que ayudan a la formación académica, personal y social de los estudiantes. Algunos de los valores más importantes son:"
+valoresCards:
+  - icon: "📚"
+    title: "Responsabilidad"
+    body: "Cumplir con tareas, proyectos, horarios y compromisos escolares."
+  - icon: "🤝"
+    title: "Respeto"
+    body: "Aceptar y valorar a compañeros, maestros y las diferencias de opiniones, culturas o formas de pensar."
+  - icon: "✔️"
+    title: "Honestidad"
+    body: "Actuar con verdad, no copiar en exámenes ni hacer trampa en trabajos."
+  - icon: "🕒"
+    title: "Disciplina"
+    body: "Seguir reglas, mantener orden y constancia en el estudio."
+  - icon: "🤲"
+    title: "Solidaridad"
+    body: "Apoyar a compañeros cuando lo necesiten y trabajar en equipo."
+  - icon: "🌍"
+    title: "Tolerancia"
+    body: "Aceptar ideas y formas de ser distintas a las propias."
+  - icon: "💪"
+    title: "Perseverancia"
+    body: "Seguir esforzándose para lograr metas académicas y personales."
+  - icon: "❤️"
+    title: "Empatía"
+    body: "Entender y respetar los sentimientos de los demás."
+valoresFooter: "Estos valores ayudan a formar estudiantes más responsables, respetuosos y preparados para la universidad y la vida laboral."
+
+# ── CORRECCIÓN 2 & 3: Programas Académicos → cards por semestre ────────
+# Sin el texto de subtítulo que se eliminó
+etapaTitle: "Programas Académicos · Especialidad en Administración"
+etapaSubtitle: "En un entorno económico en constante innovación, la capacidad de gestionar recursos y liderar proyectos de carácter sostenible es fundamental."
+etapaItems:
+  - icon: "📘"
+    title: "3er Semestre"
+    body: "Cultura Emprendedora y Proceso Administrativo: planeación, organización, dirección y control empresarial."
+  - icon: "📗"
+    title: "4to Semestre"
+    body: "Marketing y Legalidad Empresarial: exploración del mercado y cumplimiento normativo."
+  - icon: "📙"
+    title: "5to Semestre"
+    body: "Ventas y Finanzas: técnicas avanzadas para maximizar rentabilidad y gestión estratégica."
+  - icon: "📕"
+    title: "6to Semestre"
+    body: "Comunicación Empresarial y Proyectos Empresariales de alto impacto."
+
+# CORRECCIÓN 3: etapaFooter eliminado (texto que no debe ir)
+
+# ── Desarrollo Académico ───────────────────────────────────────────────
+trabajanHeading: "Áreas de Desarrollo"
+trabajanBody: "El egresado desarrolla un perfil competente en administración, capaz de liderar con ética y visión en las siguientes áreas:"
 trabajanBullets:
-  - Intercambios en Canadá y Estados Unidos
-  - Modelo ONU con delegaciones internacionales
-  - Proyectos de impacto social certificados
-trabajanImage: "/uploads/preparatoria-liderazgo.jpg"
-trabajanCtaText: "Conoce más"
+  - "Gestión Estratégica: capacidad para organizar y dirigir procesos operativos en cualquier tipo de organización."
+  - "Análisis de Mercado: dominio de estrategias de comercialización, posicionamiento de marca y tendencias de consumo."
+  - "Inteligencia Financiera: habilidad para interpretar estados financieros y asegurar la viabilidad económica de proyectos."
+  - "Liderazgo Emprendedor: base sólida para fundar empresa propia o continuar estudios en Administración, Negocios Internacionales o Contaduría."
+trabajanImage: "/uploads/preparatoria-academico.jpg"
+trabajanCtaText: "Agenda una visita"
 trabajanCtaLink: "/#contacto"
 
-# Bloque 3: Texto izq | Foto der
-desarrolloHeading: "Desarrollo académico al nivel universitario"
-desarrolloBody: "El 100% de nuestros egresados ingresa a universidad, más del 70% en su primera opción. UNAM, Tec de Monterrey, IBERO y universidades en el extranjero reciben a nuestros alumnos preparados para triunfar."
-desarrolloBullets:
-  - TOEFL y Cambridge B2/C1 al egreso
-  - SAT y cursos AP para universidades de EE.UU.
-  - Simulacros de entrevistas universitarias reales
-desarrolloImage: "/uploads/prepa-gal-1.jpg"
-desarrolloCtaText: "Únete a la comunidad"
-desarrolloCtaLink: "/#contacto"
+# ── CORRECCIÓN 6: Club Interact — antes de Orgullo Piaget ──────────────
+interactTitle: "Club Interact"
+interactBody: "Nuestros alumnos de preparatoria forman parte activa del Club de Interact, patrocinado por Rotary International. Su objetivo es que los jóvenes desarrollen liderazgo, compañerismo y espíritu de servicio ayudando a su comunidad."
+interactItems:
+  - icon: "❤️"
+    title: "Proyectos de ayuda comunitaria"
+    body: "Recolección de alimentos y apoyo a personas necesitadas."
+  - icon: "🌱"
+    title: "Actividades ecológicas"
+    body: "Plantar árboles, limpiar parques y cuidar el entorno."
+  - icon: "🎉"
+    title: "Eventos solidarios"
+    body: "Campañas, convivencias y recaudación de fondos."
+  - icon: "🧑‍💼"
+    title: "Desarrollo de liderazgo"
+    body: "Organizar proyectos y trabajar en equipo con responsabilidad."
 
-orgulloItems:
-  - icon: "🎓"
-    title: "100% de ingreso a universidad"
-    body: "Todos los egresados de preparatoria continúan estudios universitarios."
-  - icon: "🌎"
-    title: "70%+ en su primera opción"
-    body: "UNAM, Tec, IBERO y universidades internacionales entre los destinos."
-  - icon: "🏅"
-    title: "Modelo de Naciones Unidas"
-    body: "Delegación ganadora en conferencias regionales 3 años consecutivos."
+# ── Orgullo Piaget ─────────────────────────────────────────────────────
+orgulloTitle: "Orgullo Piaget"
+orgulloSubtitle: "Ellos son nuestros alumnos ganadores en diferentes concursos académicos y culturales — Orgullo de Reynosa · Orgullo de Tamaulipas · Orgullo Nacional"
 orgulloVideoUrl: ""
-orgulloVideoPoster: "/uploads/prepa-video-poster.jpg"
+orgulloVideoPoster: "/uploads/preparatoria-video-poster.jpg"
+orgulloItems: []
 
+# ── Talleres ───────────────────────────────────────────────────────────
 talleres:
-  - icon: "📐"
-    name: "Pre-universitarios"
-    description: "Cursos de nivelación y preparación para exámenes de admisión universitaria."
-  - icon: "🌐"
-    name: "Inglés avanzado"
-    description: "Preparación para certificaciones TOEFL y Cambridge con nativos hablantes."
-  - icon: "💼"
-    name: "Liderazgo ejecutivo"
-    description: "Talleres con directivos y empresarios que comparten experiencias reales del mundo profesional."
-  - icon: "🎓"
-    name: "Orientación universitaria"
-    description: "Acompañamiento individualizado en el proceso de selección y admisión a universidades."
+  - icon: "💃"
+    name: "Baile / Danza"
+    description: "Ritmo, expresión corporal y disfrute del movimiento en grupo."
+  - icon: "⚽"
+    name: "Fútbol"
+    description: "Trabajo en equipo, coordinación y valores deportivos."
+  - icon: "🍳"
+    name: "Cocina"
+    description: "Autonomía, matemáticas y ciencias aplicadas en la preparación de alimentos."
+  - icon: "♟"
+    name: "Ajedrez"
+    description: "Pensamiento estratégico, concentración y toma de decisiones."
+  - icon: "🤖"
+    name: "Robótica"
+    description: "Programación, lógica y creatividad tecnológica."
+  - icon: "📷"
+    name: "Fotografía"
+    description: "Observación, creatividad visual y narración a través de la imagen."
+  - icon: "🖌"
+    name: "Pintura"
+    description: "Técnicas artísticas que potencian la expresión personal y la sensibilidad estética."
+  - icon: "🏀"
+    name: "Básquetbol"
+    description: "Deporte en equipo que desarrolla agilidad, trabajo colaborativo y disciplina."
+  - icon: "🎵"
+    name: "Música"
+    description: "Ritmo, melodía e interpretación musical para la sensibilidad y la concentración."
+  - icon: "🏆"
+    name: "Torneos"
+    description: "Competencias deportivas y académicas que fortalecen el espíritu de equipo."
+  - icon: "🎤"
+    name: "Talent Show"
+    description: "Espacio para mostrar talentos artísticos, musicales y creativos ante la comunidad."
+  - icon: "🎄"
+    name: "Pastorela"
+    description: "Tradición navideña que promueve la participación cultural y el trabajo en equipo."
 
+# ── Horarios ──────────────────────────────────────────────────────────
+horariosSubtitle: "Horarios Sin Costo adicional"
 horarios:
-  - dia: "Lunes a Viernes"
-    horario: "7:00 – 15:00"
-  - dia: "Actividades y asesorías"
-    horario: "15:00 – 18:00"
-  - dia: "Sábados (optativo)"
-    horario: "9:00 – 13:00"
+  - dia: "Preparatoria — Lunes a Viernes"
+    horario: "7:00 a.m. – 3:00 p.m."
+  - dia: "Early Access — Lunes a Viernes"
+    horario: "6:50 a.m. – 7:00 a.m."
+  - dia: "Estancia"
+    horario: "Hasta las 6:00 p.m."
 
+# ── Galería ────────────────────────────────────────────────────────────
 gallery:
   - image: "/uploads/prepa-gal-1.jpg"
-    caption: "Conferencia de liderazgo"
+    caption: "Salones"
   - image: "/uploads/prepa-gal-2.jpg"
-    caption: "Simulacro de entrevistas universitarias"
+    caption: "Laboratorio de cómputo"
   - image: "/uploads/prepa-gal-3.jpg"
-    caption: "Graduación generación 2023"
+    caption: "Vida estudiantil"
+  - image: "/uploads/prepa-gal-4.jpg"
+    caption: "Graduación"
 
+# ── FAQ ───────────────────────────────────────────────────────────────
 faq:
+  - question: "¿Qué especialidades ofrece la preparatoria?"
+    answer: "Ofrecemos especialidad en Traducción de Inglés y especialidad en Administración, ambas con enfoque práctico y orientadas al mercado laboral y universitario."
   - question: "¿Tienen 100% de aceptación en universidades?"
-    answer: "Sí, el 100% ingresa a universidad y más del 70% lo hace en su primera opción, incluyendo UNAM, Tec, Ibero y universidades en el extranjero."
-  - question: "¿Qué certificaciones internacionales pueden obtener?"
-    answer: "Ofrecemos preparación para TOEFL, Cambridge B2/C1, SAT, y cursos AP reconocidos por universidades de Estados Unidos."
-  - question: "¿Tienen intercambios al extranjero?"
-    answer: "Sí, tenemos convenios con escuelas en Canadá y Estados Unidos. El intercambio es optativo con duración de 2 a 6 semanas."
+    answer: "Sí, el 100% de nuestros egresados ingresa a universidad, y más del 70% lo hace en su primera opción, incluyendo UNAM, Tec de Monterrey, IBERO y universidades en el extranjero."
+  - question: "¿Qué es el Club Interact?"
+    answer: "Es un club patrocinado por Rotary International donde los alumnos desarrollan liderazgo y espíritu de servicio a través de proyectos comunitarios, actividades ecológicas y eventos solidarios."
+  - question: "¿Tienen certificación oficial SEP?"
+    answer: "Sí, estamos incorporados a la SEP. Los alumnos obtienen certificado oficial de bachillerato con validez nacional."
+  - question: "¿Ofrecen preparación para exámenes de admisión universitaria?"
+    answer: "Sí, incluimos preparación para EXANI, COMIPEMS y otras pruebas de admisión dentro del programa académico regular."
 
 blocks: []
 ---

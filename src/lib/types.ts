@@ -79,8 +79,34 @@ export interface ValorItem { icon: string; title: string; description: string; }
 
 export interface OrgulloItem { icon: string; title: string; body: string; }
 
+// Beneficio del programa bilingüe
+export interface BilingueItem {
+  icon: string;
+  title: string;
+  body: string;
+}
+
+// Programa académico (libros/plataformas)
+export interface ProgramaItem {
+  name: string;
+}
+
 // Sub-bloque título + descripción (para "Nos distingue")
 export interface SubblockItem {
+  title: string;
+  body: string;
+}
+
+// Valor con descripción (preparatoria)
+export interface ValorCard {
+  icon: string;
+  title: string;
+  body: string;
+}
+
+// Club Interact item
+export interface InteractItem {
+  icon: string;
   title: string;
   body: string;
 }
@@ -121,15 +147,21 @@ export interface NivelData {
 
   // ── Áreas de desarrollo (nueva sección) ──
   areasTitle?: string;
+  areasSubtitle?: string;
   areasItems?: AreaDesarrolloItem[];
 
-  // ── Valores (lista simple) ──
+  // ── Valores ──
   valoresTitle?: string;
+  valoresSubtitle?: string;
   valoresItems?: string[];
+  valoresCards?: ValorCard[];
+  valoresFooter?: string;
 
   // ── En esta etapa los niños trabajan ──
   etapaTitle?: string;
+  etapaSubtitle?: string;
   etapaItems?: EtapaTrabajanItem[];
+  etapaFooter?: string;
 
   // ── Bloque 2: "Desarrollo Académico" — Foto izq / Texto der ──
   trabajanHeading?: string;
@@ -138,6 +170,7 @@ export interface NivelData {
   trabajanImage?: string;
   trabajanCtaText?: string;
   trabajanCtaLink?: string;
+  trabajanFooter?: string;
 
   // ── Bloque 3 (opcional) ──
   desarrolloHeading?: string;
@@ -147,7 +180,23 @@ export interface NivelData {
   desarrolloCtaText?: string;
   desarrolloCtaLink?: string;
 
+  // ── Club Interact ──
+  interactTitle?: string;
+  interactBody?: string;
+  interactItems?: InteractItem[];
+
+  // ── Multigrado + Bilingüe (sección nueva) ──
+  multigradoTitle?: string;
+  multigradoBody?: string;
+  bilingueTitle?: string;
+  bilingueBody?: string;
+  bilingueItems?: BilingueItem[];
+  programasTitle?: string;
+  programasItems?: ProgramaItem[];
+
   // ── Orgullo Piaget ──
+  orgulloTitle?: string;
+  orgulloSubtitle?: string;
   orgulloItems?: OrgulloItem[];
   orgulloVideoUrl?: string;
   orgulloVideoPoster?: string;

@@ -2,10 +2,12 @@ import type { EtapaTrabajanItem } from "@/lib/types";
 
 interface Props {
   title?: string;
+  subtitle?: string;
   items: EtapaTrabajanItem[];
+  footer?: string;
 }
 
-export default function NivelEtapaTrabajan({ title, items }: Props) {
+export default function NivelEtapaTrabajan({ title, subtitle, items, footer }: Props) {
   if (!items?.length) return null;
 
   return (
@@ -14,12 +16,18 @@ export default function NivelEtapaTrabajan({ title, items }: Props) {
 
         {/* Título */}
         <div className="text-center mb-10">
+          <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-2">
+            Programa académico
+          </p>
           <h2
             className="text-3xl sm:text-4xl font-bold"
             style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
           >
             {title ?? "En esta etapa, los niños trabajan"}
           </h2>
+          {subtitle && (
+            <p className="text-slate-600 text-base leading-relaxed mt-2">{subtitle}</p>
+          )}
         </div>
 
         {/* Grid de materias — 2 cols / 4 cols en lg */}
@@ -29,7 +37,6 @@ export default function NivelEtapaTrabajan({ title, items }: Props) {
               key={i}
               className="glass-card rounded-2xl p-5 flex flex-col items-center text-center gap-3"
             >
-              {/* Círculo con icono */}
               <div
                 className="w-14 h-14 rounded-full flex items-center justify-center text-2xl flex-shrink-0"
                 style={{ backgroundColor: "rgba(29,78,158,0.1)" }}
@@ -48,6 +55,13 @@ export default function NivelEtapaTrabajan({ title, items }: Props) {
             </div>
           ))}
         </div>
+
+        {/* Texto de cierre debajo del grid */}
+        {footer && (
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed mt-8 text-center max-w-4xl mx-auto">
+            {footer}
+          </p>
+        )}
 
       </div>
     </section>

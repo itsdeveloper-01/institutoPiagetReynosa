@@ -6,7 +6,8 @@ interface Props {
   heading: string;
   body: string;
   bullets?: string[];
-  subblocks?: SubblockItem[];   // ← título + descripción
+  subblocks?: SubblockItem[];
+  footer?: string;
   image?: string;
   imageAlt?: string;
   ctaText?: string;
@@ -19,6 +20,7 @@ export default function NivelDistingue({
   body,
   bullets = [],
   subblocks = [],
+  footer,
   image,
   imageAlt = "",
   ctaText,
@@ -74,6 +76,12 @@ export default function NivelDistingue({
             </li>
           ))}
         </ul>
+      )}
+
+      {footer && (
+        <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
+          {footer}
+        </p>
       )}
 
       {ctaText && (

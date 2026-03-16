@@ -74,7 +74,7 @@ export default function Navbar() {
                 <a
                   href={resolveHref("#contacto")}
                   onClick={() => setOpen(false)}
-                  className="inline-flex items-center justify-center rounded-lg bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-slate-900 transition"
+                  className="hidden lg:inline-flex items-center justify-center rounded-lg bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-slate-900 transition"
                 >
                   Contáctanos
                 </a>
