@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useState } from "react";
 
@@ -21,7 +22,6 @@ export default function NivelOrgulloPiaget({ videoUrl, videoPoster, items = [] }
     <div className="h-full flex flex-col gap-5">
       {/* Header homologado */}
       <div>
-        <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-1">Logros</p>
         <h2 className="text-2xl font-bold text-slate-800" style={{ fontFamily: "var(--font-display)" }}>
           Orgullo Piaget
         </h2>
@@ -34,7 +34,7 @@ export default function NivelOrgulloPiaget({ videoUrl, videoPoster, items = [] }
             <iframe src={videoUrl} className="w-full h-full" allow="autoplay; fullscreen" allowFullScreen />
           ) : (
             <button onClick={() => setPlaying(true)} className="w-full h-full flex items-center justify-center group">
-              {videoPoster && <img src={videoPoster} alt="" className="absolute inset-0 w-full h-full object-cover" />}
+              {videoPoster && <Image src={videoPoster} alt="" fill className="object-cover" loading="lazy" quality={75} />}
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition" />
               <span className="relative w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">

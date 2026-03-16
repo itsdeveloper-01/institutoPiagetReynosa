@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useState } from "react";
 import type { GalleryItem } from "@/lib/types";
@@ -17,7 +18,6 @@ export default function NivelGallery({ gallery, embedded = false }: Props) {
     <div className="flex flex-col h-full">
       {/* Header homologado — dentro del padding de la card */}
       <div className="px-6 pt-6 pb-4">
-        <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-1">Instalaciones</p>
         <h2 className="text-2xl font-bold text-slate-800" style={{ fontFamily: "var(--font-display)" }}>
           Galería
         </h2>
@@ -25,12 +25,7 @@ export default function NivelGallery({ gallery, embedded = false }: Props) {
 
       {/* Imagen principal */}
       <div className="relative overflow-hidden flex-1 min-h-52">
-        <img
-          src={gallery[active].image}
-          alt={gallery[active].caption || ""}
-          className="w-full h-full object-cover"
-          style={{ minHeight: "200px" }}
-        />
+        <Image src={gallery[active].image} alt={gallery[active].caption || ""} fill sizes="50vw" className="object-cover" loading="lazy" quality={80} />
         {gallery[active].caption && (
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-5 py-3">
             <p className="text-white text-sm">{gallery[active].caption}</p>
@@ -54,7 +49,7 @@ export default function NivelGallery({ gallery, embedded = false }: Props) {
             onClick={() => setActive(i)}
             className={`rounded-lg overflow-hidden transition-all ${i === active ? "ring-2 ring-brand-blue ring-offset-1 scale-105" : "opacity-50 hover:opacity-80"}`}
           >
-            <img src={g.image} alt="" className="w-14 h-10 object-cover" />
+            <Image src={g.image} alt="" width={56} height={40} className="object-cover w-14 h-10" loading="lazy" quality={60} />
           </button>
         ))}
       </div>

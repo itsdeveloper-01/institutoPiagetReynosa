@@ -2,46 +2,94 @@
 slug: "maternal"
 title: "Comunidad infantil – Maternal"
 displayName: "Comunidad infantil"
-subtitle: "Un espacio seguro y estimulante para los primeros años de vida"
-heroImage: "/uploads/4-patio-primaria-y-preescolar-1.jpg"
+subtitle: "Edad 1 año 8 meses a 3 años"
+heroImage: "/uploads/maternal-hero.jpg"
 ctaText: "Solicitar información"
 ctaLink: "/#contacto"
-ageRange: "45 días – 3 años"
-ageDescription: "En esta etapa el cerebro del niño crece más rápido que en ningún otro periodo de su vida. Nuestro ambiente preparado Montessori maximiza cada oportunidad de aprendizaje."
+ageRange: "1 año 8 meses – 3 años"
 
-# Bloque 1: Texto izq | Foto der
-distingueHeading: "Lo que nos distingue en Maternal Piaget"
-distingueBody: "Cada espacio, cada material y cada rutina están diseñados para acompañar al bebé y al niño pequeño en su desarrollo natural. Nuestras guías certificadas crean vínculos seguros que son la base de todo aprendizaje futuro."
+# ── Bloque 1: "Nos distingue" ──────────────────────────────────────────
+distingueHeading: "Nos distingue"
+distingueBody: ""
 distingueBullets:
-  - Ratio máximo 1 guía por cada 3 bebés
-  - Certificación Montessori AMI internacional
-  - Ambiente preparado a la medida del niño
+  - "Material Montessori"
+  - "Ambiente preparado"
 distingueImage: "/uploads/maternal-ambiente.jpg"
 distingueCtaText: "Agenda una visita"
 distingueCtaLink: "/#contacto"
 
-# Bloque 2: Foto izq | Texto der
-trabajanHeading: "Así crecen nuestros pequeños cada día"
-trabajanBody: "No existe el aprendizaje formal en esta etapa. Cada actividad, cada material y cada interacción estimulan el desarrollo sensorial, motor y emocional del niño a su propio ritmo y tiempo."
-trabajanBullets:
-  - Desarrollo sensorial y motor integrado
-  - Estimulación temprana del lenguaje oral
-  - Autonomía en el cuidado personal
-trabajanImage: "/uploads/maternal-gal-1.jpg"
-trabajanCtaText: "Conoce más"
+# Usamos trabajanBody para el contenido rico del bloque "Nos distingue"
+# El texto largo va en dos sub-bloques internos — lo mostramos como lista enriquecida
+distingueSubblocks:
+  - title: "Material Montessori"
+    body: "En Comunidad Infantil, el material Montessori está diseñado para que los niños aprendan a través de la exploración y la experiencia directa. Con objetos reales y adaptados a su tamaño, desarrollan coordinación, autonomía, lenguaje y control del movimiento, mientras refinan sus sentidos."
+  - title: "Ambiente"
+    body: "El ambiente, cuidadosamente preparado, ofrece orden, belleza y seguridad. El mobiliario a su altura favorece la independencia y el acompañamiento respetuoso les brinda confianza para explorar con libertad dentro de límites claros."
+
+# ── Áreas de desarrollo ────────────────────────────────────────────────
+areasTitle: "Áreas de desarrollo"
+areasItems:
+  - icon: "👐"
+    title: "Vida Práctica"
+    body: "Actividades que fortalecen la independencia, la coordinación y el orden a través de experiencias cotidianas adaptadas a su edad."
+  - icon: "👀"
+    title: "Desarrollo Sensorial"
+    body: "Estimulación de los sentidos mediante materiales que favorecen la exploración, la concentración y la construcción del conocimiento."
+  - icon: "🗣"
+    title: "Lenguaje"
+    body: "Enriquecimiento del vocabulario y estimulación de la comunicación verbal como base para futuras habilidades de lectura y escritura."
+  - icon: "🎵"
+    title: "Movimiento y Música"
+    body: "Desarrollo del equilibrio, ritmo y expresión corporal, promoviendo seguridad y control del propio cuerpo."
+  - icon: "🌱"
+    title: "Desarrollo Socioemocional"
+    body: "Aprenden a convivir, compartir y expresar emociones en un ambiente de respeto y afecto."
+  - icon: "🌎"
+    title: "Exploración del Entorno"
+    body: "Primer acercamiento a la naturaleza y al mundo que los rodea, despertando la curiosidad y el asombro."
+
+# ── Valores ───────────────────────────────────────────────────────────
+valoresTitle: "Valores"
+valoresItems:
+  - "Autonomía"
+  - "Respeto"
+  - "Amor"
+  - "Desarrollo Emocional"
+  - 'Programa "Adiós Pañal"'
+
+# ── En esta etapa los niños trabajan ──────────────────────────────────
+etapaTitle: "En esta etapa, los niños trabajan"
+etapaItems:
+  - icon: "🧹"
+    title: "Vida práctica"
+    body: "Desarrollo de habilidades cotidianas como vestirse y cuidar el entorno para fomentar la coordinación."
+  - icon: "🎨"
+    title: "Psico-sensorial"
+    body: "Reconocimiento de formas, tamaños, texturas y colores para potenciar la percepción y el razonamiento."
+  - icon: "🗣"
+    title: "Lenguaje"
+    body: "Enriquecimiento del vocabulario e inicio de la comunicación oral."
+  - icon: "🔢"
+    title: "Matemáticas"
+    body: "Introducción al mundo de los números utilizando materiales concretos."
+  - icon: "🌐"
+    title: "Inglés"
+    body: "Sistema bilingüe integrado desde los primeros años."
+  - icon: "🎵"
+    title: "Clase de música en inglés"
+    body: "Estimulación musical y lingüística combinadas."
+  - icon: "🖌"
+    title: "Arte"
+    body: "Expresión creativa libre con materiales seguros y estimulantes."
+
+# ── Bloque "Desarrollo Académico" ─────────────────────────────────────
+trabajanHeading: "¿Qué logrará tu pequeño/a?"
+trabajanBody: "Socialización, independencia, concentración sostenida, desarrollo de lenguaje, autoestima, autocontrol, internalización de reglas y control de esfínteres a su ritmo.\n\nNo sólo cuidamos a tu pequeño(a), somos una Comunidad Educativa Infantil. Te ofrecemos un ambiente preparado que incluye materiales científicamente elaborados para el desarrollo de las habilidades del niño. Todos los alumnos son atendidos por 2 guías y una teacher.\n\nNuestro programa académico se basa en la SEP, además de ampliar las posibilidades de experiencias sensoriales, sociales y desarrollar el potencial de nuestros alumnos en forma natural, con seguridad e independencia."
+trabajanImage: "/uploads/maternal-gal-2.jpg"
+trabajanCtaText: "Agenda una visita"
 trabajanCtaLink: "/#contacto"
 
-# Bloque 3: Texto izq | Foto der
-desarrolloHeading: "Desarrollo integral desde el primer día"
-desarrolloBody: "Música, expresión corporal, contacto con la naturaleza y vida práctica cotidiana son parte del día a día. Observamos, acompañamos y creamos las condiciones óptimas para que cada niño florezca."
-desarrolloBullets:
-  - Música y movimiento desde los 45 días
-  - Vida práctica y autonomía progresiva
-  - Interacción social con pares supervisada
-desarrolloImage: "/uploads/maternal-gal-2.jpg"
-desarrolloCtaText: "Únete a la comunidad"
-desarrolloCtaLink: "/#contacto"
-
+# ── Orgullo Piaget ─────────────────────────────────────────────────────
 orgulloItems:
   - icon: "👶"
     title: "Ambiente certificado Montessori AMI"
@@ -55,23 +103,32 @@ orgulloItems:
 orgulloVideoUrl: ""
 orgulloVideoPoster: "/uploads/maternal-video-poster.jpg"
 
+# ── Talleres + imágenes carrusel ───────────────────────────────────────
 talleres:
+  - icon: "🌟"
+    name: "Estimulación temprana"
+    description: "Actividades diseñadas para potenciar el desarrollo integral del niño en sus primeros años."
   - icon: "🎵"
-    name: "Música y movimiento"
-    description: "Estimulación auditiva y rítmica para el desarrollo neurológico desde edades tempranas."
-  - icon: "🎨"
-    name: "Expresión artística"
-    description: "Arte sensorial con materiales seguros que potencian la creatividad y la motricidad fina."
-  - icon: "🌿"
-    name: "Naturación"
-    description: "Contacto con la naturaleza, plantas y animales para desarrollar la observación y el cuidado."
+    name: "Cantos y juegos"
+    description: "Experiencias musicales y lúdicas que desarrollan el lenguaje, la memoria y la socialización."
+talleresImages:
+  - "/uploads/maternal-talleres-1.jpg"
+  - "/uploads/maternal-talleres-2.jpg"
+  - "/uploads/maternal-talleres-3.jpg"
 
+# ── Horarios + imágenes carrusel ──────────────────────────────────────
 horarios:
-  - dia: "Lunes a Viernes"
-    horario: "7:30 – 15:30"
-  - dia: "Servicio de guardería extendido"
-    horario: "hasta las 18:00"
+  - dia: "Comunidad Infantil — Lunes a Viernes"
+    horario: "9:00 a.m. – 1:00 p.m."
+  - dia: "Early Access — Lunes a Viernes"
+    horario: "6:50 a.m. – 9:00 a.m."
+horariosSubtitle: "Horarios Sin Costo adicional"
+horariosImages:
+  - "/uploads/maternal-horarios-1.jpg"
+  - "/uploads/maternal-horarios-2.jpg"
+  - "/uploads/maternal-horarios-3.jpg"
 
+# ── Galería ────────────────────────────────────────────────────────────
 gallery:
   - image: "/uploads/maternal-gal-1.jpg"
     caption: "Sala de estimulación temprana"
@@ -80,13 +137,16 @@ gallery:
   - image: "/uploads/maternal-gal-3.jpg"
     caption: "Espacio de lectura compartida"
 
+# ── FAQ ────────────────────────────────────────────────────────────────
 faq:
   - question: "¿Desde qué edad puedo inscribir a mi bebé?"
-    answer: "Aceptamos bebés desde los 45 días de nacidos en nuestra sala de lactantes, con ratio máximo de 1 guía por cada 3 bebés."
+    answer: "Aceptamos niños desde 1 año 8 meses en nuestra Comunidad Infantil, con ratio máximo de 1 guía por cada 3 niños."
   - question: "¿Qué necesito llevar cada día?"
-    answer: "Proporcionamos una lista detallada en la entrevista. En general: muda de ropa, pañales (si aplica), lonchera y botella de agua."
+    answer: "Proporcionamos una lista detallada en la entrevista. En general: muda de ropa, lonchera y botella de agua."
   - question: "¿Tienen servicio de alimentación?"
     answer: "Sí, ofrecemos servicio de comedor con menú balanceado elaborado por nutrióloga. También puedes enviar lonchera de casa."
+  - question: "¿Qué es el programa Adiós Pañal?"
+    answer: "Acompañamos a los niños y familias en el proceso de control de esfínteres de forma respetuosa y a su propio ritmo, sin presiones."
 
 blocks: []
 ---

@@ -1,9 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
+import type { SubblockItem } from "@/lib/types";
 
 interface Props {
   heading: string;
   body: string;
   bullets?: string[];
+  subblocks?: SubblockItem[];   // ← título + descripción
   image?: string;
   imageAlt?: string;
   ctaText?: string;
@@ -15,6 +18,7 @@ export default function NivelDistingue({
   heading,
   body,
   bullets = [],
+  subblocks = [],
   image,
   imageAlt = "",
   ctaText,
@@ -25,24 +29,36 @@ export default function NivelDistingue({
   const textBlock = (
     <div className="w-full lg:w-1/2 flex flex-col justify-center px-0 lg:px-10 xl:px-16">
 
-      {/* Título — misma tipografía y color que el resto del sitio */}
       <h2
         className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-5"
-        style={{
-          fontFamily: "var(--font-display)",
-          color: "var(--color-brand-blue)",
-        }}
+        style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
       >
         {heading}
       </h2>
 
-      {/* Cuerpo — igual que MontessoriBanner, PropuestaEducativa */}
-      <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
-        {body}
-      </p>
+      {body && (
+        <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">{body}</p>
+      )}
 
-      {/* Bullets con check azul */}
-      {bullets.length > 0 && (
+      {/* Subblocks: título en negrita + párrafo descriptivo */}
+      {subblocks.length > 0 && (
+        <div className="flex flex-col gap-5 mb-8">
+          {subblocks.map((sb, i) => (
+            <div key={i}>
+              <h3
+                className="font-bold text-slate-800 text-base mb-1"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {sb.title}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{sb.body}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Bullets simples — solo si no hay subblocks */}
+      {subblocks.length === 0 && bullets.length > 0 && (
         <ul className="mb-8 space-y-3">
           {bullets.map((b, i) => (
             <li key={i} className="flex items-start gap-3">
@@ -60,12 +76,9 @@ export default function NivelDistingue({
         </ul>
       )}
 
-      {/* CTA — usa btn-primary del sistema global */}
       {ctaText && (
         <div>
-          <Link href={ctaLink} className="btn-primary">
-            {ctaText}
-          </Link>
+          <Link href={ctaLink} className="btn-primary">{ctaText}</Link>
         </div>
       )}
     </div>
@@ -75,7 +88,7 @@ export default function NivelDistingue({
     <div className="w-full lg:w-1/2">
       <div className="rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: "4/3" }}>
         {image ? (
-          <img src={image} alt={imageAlt || heading} className="w-full h-full object-cover" />
+          <Image src={image} alt={imageAlt || heading} fill sizes="(max-width:1024px) 100vw, 50vw" className="object-cover" loading="lazy" quality={80} />
         ) : (
           <div
             className="w-full h-full flex items-center justify-center"

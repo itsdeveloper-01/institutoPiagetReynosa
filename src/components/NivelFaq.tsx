@@ -16,7 +16,6 @@ export default function NivelFaq({ faq, embedded = false }: Props) {
   const inner = (
     <div>
       {/* Header homologado */}
-      <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-1">Respuestas</p>
       <h2 className="text-2xl font-bold text-slate-800 mb-6" style={{ fontFamily: "var(--font-display)" }}>
         Preguntas frecuentes
       </h2>
