@@ -1,4 +1,6 @@
 import type { InteractItem } from "@/lib/types";
+import NivelIcono from "@/components/NivelIcono";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface Props {
   title?: string;
@@ -14,35 +16,43 @@ export default function NivelClubInteract({ title, body, items = [] }: Props) {
   return (
     <section className="section-sky py-14 lg:py-20">
       <div className={W}>
-        <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-2">
-          Vida estudiantil
-        </p>
-        <h2
-          className="text-3xl sm:text-4xl font-bold leading-tight mb-4"
-          style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
-        >
-          {title ?? "Club Interact"}
-        </h2>
-        {body && (
-          <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 max-w-3xl">
-            {body}
-          </p>
-        )}
+        <ScrollReveal>
+          <p className="eyebrow mb-2">Vida estudiantil</p>
+          <h2
+            className="text-h2-sub sm:text-h2 font-bold leading-tight mb-4"
+            style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
+          >
+            {title ?? "Club Interact"}
+          </h2>
+          {body && (
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 max-w-3xl">
+              {body}
+            </p>
+          )}
+        </ScrollReveal>
+
         {items.length > 0 && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {items.map((item, i) => (
-              <div key={i} className="glass-card rounded-2xl p-6 flex gap-4 items-start">
-                <span className="text-3xl flex-shrink-0 leading-none">{item.icon}</span>
-                <div>
-                  <h3
-                    className="font-bold text-slate-800 mb-1"
-                    style={{ fontFamily: "var(--font-display)" }}
+              <ScrollReveal key={i} delay={i * 80} className="flex flex-col">
+                <div className="glass-card card-hover rounded-2xl p-6 flex gap-4 items-start h-full">
+                  <div
+                    className="w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0"
+                    style={{ background: "rgba(29,78,158,0.08)" }}
                   >
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">{item.body}</p>
+                    <NivelIcono name={item.icon} size={22} />
+                  </div>
+                  <div>
+                    <h3
+                      className="font-bold text-brand-blue text-h4 mb-1"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-500 text-body-sm leading-relaxed">{item.body}</p>
+                  </div>
                 </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         )}

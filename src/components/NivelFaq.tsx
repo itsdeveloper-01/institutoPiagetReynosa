@@ -20,7 +20,7 @@ export default function NivelFaq({ faq, embedded = false }: Props) {
         Respuestas
       </p>
       <h2
-        className="text-3xl sm:text-4xl font-bold leading-tight mb-6"
+        className="text-h2-sub sm:text-h2 font-bold leading-tight mb-6"
         style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
       >
         Preguntas frecuentes
@@ -36,7 +36,7 @@ export default function NivelFaq({ faq, embedded = false }: Props) {
               onClick={() => setOpen(open === i ? null : i)}
               className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
             >
-              <span className="font-semibold text-slate-800 text-sm leading-snug">{item.question}</span>
+              <span className="font-semibold text-slate-800 text-body leading-snug">{item.question}</span>
               <span
                 className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-transform"
                 style={{
@@ -50,7 +50,7 @@ export default function NivelFaq({ faq, embedded = false }: Props) {
               </span>
             </button>
             {open === i && (
-              <div className="px-5 pb-4 text-slate-600 text-sm leading-relaxed border-t border-white/30">
+              <div className="px-5 pb-4 text-slate-600 text-body leading-relaxed border-t border-white/30">
                 {item.answer}
               </div>
             )}

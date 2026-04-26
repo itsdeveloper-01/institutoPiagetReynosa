@@ -1,16 +1,18 @@
 import type { AreaDesarrolloItem, ProgramaItem, ValorCard } from "@/lib/types";
+import NivelIcono from "@/components/NivelIcono";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface Props {
   title?: string;
   subtitle?: string;
   items: AreaDesarrolloItem[];
   valoresTitle?: string;
-  valoresItems?: string[];
-  programasTitle?: string;
-  programasItems?: ProgramaItem[];
   valoresSubtitle?: string;
+  valoresItems?: string[];
   valoresCards?: ValorCard[];
   valoresFooter?: string;
+  programasTitle?: string;
+  programasItems?: ProgramaItem[];
 }
 
 export default function NivelAreasDesarrollo({ title, subtitle, items, valoresTitle, valoresSubtitle, valoresItems, valoresCards = [], valoresFooter, programasTitle, programasItems = [] }: Props) {
@@ -20,47 +22,49 @@ export default function NivelAreasDesarrollo({ title, subtitle, items, valoresTi
     <section className="section-sky py-14 lg:py-20">
       <div className="mx-auto w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 2xl:px-16 max-w-8xl">
 
-        {/* Título de sección */}
-        <div className="text-center mb-10">
-          <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-2">
-            Desarrollo integral
-          </p>
+        {/* Título */}
+        <ScrollReveal className="text-center mb-10">
+          <p className="eyebrow mb-2">Desarrollo integral</p>
           <h2
-            className="text-3xl sm:text-4xl font-bold"
+            className="text-h2-sub sm:text-h2 font-bold"
             style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
           >
             {title ?? "Áreas de desarrollo"}
           </h2>
           {subtitle && (
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed mt-3">{subtitle}</p>
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed mt-3 max-w-3xl mx-auto">{subtitle}</p>
           )}
-        </div>
+        </ScrollReveal>
 
-        {/* Grid de áreas — 2 cols mobile / 3 cols lg */}
+        {/* Grid de áreas */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
           {items.map((area, i) => (
-            <div
-              key={i}
-              className="glass-card rounded-2xl p-6 flex gap-4 items-start"
-            >
-              <span className="text-3xl flex-shrink-0 leading-none">{area.icon}</span>
-              <div>
-                <h3
-                  className="font-bold text-slate-800 mb-1"
-                  style={{ fontFamily: "var(--font-display)" }}
+            <ScrollReveal key={i} delay={i * 80} className="flex flex-col">
+              <div className="glass-card card-hover rounded-2xl p-6 flex flex-col gap-3 h-full">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-xl"
+                  style={{ background: "rgba(29,78,158,0.08)" }}
                 >
-                  {area.title}
-                </h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{area.body}</p>
+                  <NivelIcono name={area.icon} size={22} />
+                </div>
+                <div>
+                  <h3
+                    className="font-bold text-brand-blue text-h4 mb-1"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    {area.title}
+                  </h3>
+                  <p className="text-slate-500 text-body-sm leading-relaxed">{area.body}</p>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 
-        {/* Programas académicos — sin card, directo sobre el fondo */}
+        {/* Programas académicos */}
         {programasItems.length > 0 && (
-          <div>
-            <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-4">
+          <ScrollReveal className="mb-6">
+            <p className="eyebrow mb-4">
               {programasTitle ?? "Programas Académicos de inglés"}
             </p>
             <div className="flex flex-wrap gap-2">
@@ -81,37 +85,42 @@ export default function NivelAreasDesarrollo({ title, subtitle, items, valoresTi
                 </span>
               ))}
             </div>
-          </div>
+          </ScrollReveal>
         )}
 
-        {/* Valores — chips simples o cards con descripción */}
+        {/* Valores */}
         {(valoresItems && valoresItems.length > 0 || valoresCards.length > 0) && (
-          <div className="mt-3">
-            <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-2">
+          <ScrollReveal className="mt-3">
+            <p className="eyebrow mb-2">
               {valoresTitle ?? "Valores"}
             </p>
             {valoresSubtitle && (
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-4">{valoresSubtitle}</p>
             )}
 
-            {/* Cards con descripción (preparatoria) */}
+            {/* Cards con descripción */}
             {valoresCards.length > 0 && (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {valoresCards.map((v, i) => (
-                  <div key={i} className="glass-card rounded-2xl p-5 flex gap-3 items-start">
-                    <span className="text-2xl flex-shrink-0 leading-none">{v.icon}</span>
+                  <div key={i} className="glass-card card-hover rounded-2xl p-5 flex flex-col gap-3">
+                    <div
+                      className="w-9 h-9 flex items-center justify-center rounded-lg"
+                      style={{ background: "rgba(29,78,158,0.08)" }}
+                    >
+                      <NivelIcono name={v.icon} size={20} />
+                    </div>
                     <div>
-                      <h3 className="font-bold text-slate-800 text-sm mb-1" style={{ fontFamily: "var(--font-display)" }}>
+                      <h3 className="font-bold text-brand-blue text-h4 mb-1" style={{ fontFamily: "var(--font-display)" }}>
                         {v.title}
                       </h3>
-                      <p className="text-slate-500 text-xs leading-relaxed">{v.body}</p>
+                      <p className="text-slate-500 text-body-sm leading-relaxed">{v.body}</p>
                     </div>
                   </div>
                 ))}
               </div>
             )}
 
-            {/* Chips simples (otros niveles) */}
+            {/* Chips simples */}
             {valoresCards.length === 0 && valoresItems && valoresItems.length > 0 && (
               <div className="glass-card rounded-2xl p-6 lg:p-8">
                 <div className="flex flex-wrap gap-3">
@@ -134,7 +143,7 @@ export default function NivelAreasDesarrollo({ title, subtitle, items, valoresTi
             {valoresFooter && (
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed mt-4">{valoresFooter}</p>
             )}
-          </div>
+          </ScrollReveal>
         )}
 
       </div>

@@ -1,4 +1,6 @@
 import type { Taller } from "@/lib/types";
+import NivelIcono from "@/components/NivelIcono";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface Props {
   talleres: Taller[];
@@ -12,36 +14,39 @@ export default function NivelTalleres({ talleres, embedded = false }: Props) {
 
   const inner = (
     <div>
-      <p className="text-brand-blue text-xs font-bold uppercase tracking-[0.2em] mb-2">
-        Actividades
-      </p>
-      <h2
-        className="text-3xl sm:text-4xl font-bold leading-tight mb-8"
-        style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
-      >
-        Talleres
-      </h2>
+      <ScrollReveal>
+        <p className="eyebrow mb-2">Actividades</p>
+        <h2
+          className="text-h2-sub sm:text-h2 font-bold leading-tight mb-8"
+          style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
+        >
+          Talleres
+        </h2>
+      </ScrollReveal>
 
-      {/* Grid 2 cols mobile / 3 cols desktop — igual que NivelAreasDesarrollo */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {talleres.map((t, i) => (
-          <div
-            key={i}
-            className="glass-card rounded-2xl p-6 flex gap-4 items-start"
-          >
-            {t.icon && (
-              <span className="text-3xl flex-shrink-0 leading-none">{t.icon}</span>
-            )}
-            <div>
-              <h3
-                className="font-bold text-slate-800 mb-1"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                {t.name}
-              </h3>
-              <p className="text-slate-500 text-sm leading-relaxed">{t.description}</p>
+          <ScrollReveal key={i} delay={i * 80} className="flex flex-col">
+            <div className="glass-card card-hover rounded-2xl p-6 flex gap-4 items-start h-full">
+              {t.icon && (
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0"
+                  style={{ background: "rgba(29,78,158,0.08)" }}
+                >
+                  <NivelIcono name={t.icon} size={22} />
+                </div>
+              )}
+              <div>
+                <h3
+                  className="font-bold text-brand-blue text-h4 mb-1"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {t.name}
+                </h3>
+                <p className="text-slate-500 text-body-sm leading-relaxed">{t.description}</p>
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </div>

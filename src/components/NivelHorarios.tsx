@@ -16,12 +16,12 @@ export default function NivelHorarios({ horarios, subtitle, embedded = false }: 
         Organización
       </p>
       <h2
-        className="text-3xl sm:text-4xl font-bold leading-tight mb-2"
+        className="text-h2-sub sm:text-h2 font-bold leading-tight mb-2"
         style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
       >
         Horarios
       </h2>
-      {subtitle && <p className="text-slate-500 text-sm mb-6">{subtitle}</p>}
+      {subtitle && <p className="text-slate-500 text-body-sm mb-6">{subtitle}</p>}
       {!subtitle && <div className="mb-6" />}
 
       <div className="rounded-2xl overflow-hidden border border-white/50 bg-white/20">
@@ -30,8 +30,8 @@ export default function NivelHorarios({ horarios, subtitle, embedded = false }: 
             key={i}
             className={`flex justify-between items-center px-5 py-4 gap-4 ${i > 0 ? "border-t border-white/40" : ""}`}
           >
-            <span className="font-semibold text-slate-700 text-sm">{h.dia}</span>
-            <span className="font-bold text-sm flex-shrink-0" style={{ color: "var(--color-brand-blue)" }}>
+            <span className="font-semibold text-slate-700 text-body">{h.dia}</span>
+            <span className="font-bold text-body flex-shrink-0" style={{ color: "var(--color-brand-blue)" }}>
               {h.horario}
             </span>
           </div>

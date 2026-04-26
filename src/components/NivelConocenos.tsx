@@ -27,7 +27,7 @@ export default function NivelConocenos({ whatsappNumber, whatsappMessage = "Hola
 
             {/* Título */}
             <h2
-              className="text-3xl sm:text-4xl font-bold mb-4"
+              className="text-h2-sub sm:text-h2 font-bold mb-4"
               style={{ fontFamily: "var(--font-display)", color: "#1a1a2e" }}
             >
               ¿Listo para conocernos?

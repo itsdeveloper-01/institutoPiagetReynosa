@@ -17,7 +17,7 @@ export default function NivelAge({ ageRange, ageDescription }: NivelAgeProps) {
               {ageRange}
             </p>
           </div>
-          <p className="text-slate-600 leading-relaxed text-center sm:text-left">
+          <p className="text-slate-600 text-body-lg leading-relaxed text-center sm:text-left">
             {ageDescription}
           </p>
         </div>

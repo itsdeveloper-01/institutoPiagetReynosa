@@ -22,7 +22,7 @@ export default function NivelGallery({ gallery, embedded = false }: Props) {
           Instalaciones
         </p>
         <h2
-          className="text-3xl sm:text-4xl font-bold leading-tight mb-6"
+          className="text-h2-sub sm:text-h2 font-bold leading-tight mb-6"
           style={{ fontFamily: "var(--font-display)", color: "var(--color-brand-blue)" }}
         >
           Galería

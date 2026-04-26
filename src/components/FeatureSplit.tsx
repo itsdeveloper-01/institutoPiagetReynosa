@@ -39,16 +39,16 @@ export default function FeatureSplit({ blocks }: FeatureSplitProps) {
               {/* Text */}
               <div className="w-full lg:w-1/2">
                 <h2
-                  className="text-2xl sm:text-3xl font-bold text-brand-blue mb-4"
+                  className="text-h2-sub sm:text-h2 font-bold text-brand-blue mb-4"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {block.heading}
                 </h2>
-                <p className="text-slate-600 leading-relaxed mb-5">{block.body}</p>
+                <p className="text-slate-600 text-body-lg leading-relaxed mb-5">{block.body}</p>
                 {block.bullets && block.bullets.length > 0 && (
                   <ul className="space-y-2.5">
                     {block.bullets.map((b, j) => (
-                      <li key={j} className="flex items-start gap-3 text-slate-700 text-sm">
+                      <li key={j} className="flex items-start gap-3 text-slate-700 text-body">
                         <span className="mt-0.5 text-brand-green font-bold text-lg leading-none">✓</span>
                         {b}
                       </li>
